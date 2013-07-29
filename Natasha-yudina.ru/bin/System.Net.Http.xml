@@ -4,6 +4,170 @@
     <name>System.Net.Http</name>
   </assembly>
   <members>
+    <member name="M:System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)" />
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.TryParse(System.String,System.Net.Http.Headers.ContentDispositionHeaderValue@)">
+        <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> information.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> information; otherwise, false.</returns>
+        <param name="input">Строка, которую следует проверить.</param>
+        <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> version of the string.</param>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.ToString">
+        <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> object.</summary>
+        <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.System#ICloneable#Clone">
+        <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  instance.</summary>
+        <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Size">
+        <summary>The approximate size, in bytes, of the file. </summary>
+        <returns>Returns <see cref="T:System.Int64" />.The approximate size, in bytes.</returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate">
+        <summary>The date the file was last read.</summary>
+        <returns>Returns <see cref="T:System.DateTimeOffset" />.The last read date.</returns>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Parse(System.String)">
+        <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  instance.</summary>
+        <returns>Returns <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />.An <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  instance.</returns>
+        <param name="input">A string that represents content disposition header value information.</param>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="input" /> is a null reference.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="input" /> is not valid content disposition header value information.</exception>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters">
+        <summary>A set of parameters included the Content-Disposition header.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.A collection of parameters. </returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Name">
+        <summary>The name for a content body part.</summary>
+        <returns>Returns <see cref="T:System.String" />.The name for the content body part.</returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate">
+        <summary>The date at   which the file was last modified. </summary>
+        <returns>Returns <see cref="T:System.DateTimeOffset" />.The file modification date.</returns>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.GetHashCode">
+        <summary>Serves as a hash function for an  <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> object.</summary>
+        <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar">
+        <summary>A suggestion for how to construct filenames for   storing message payloads to be used if the entities are    detached and stored in a separate files.</summary>
+        <returns>Returns <see cref="T:System.String" />.A suggested filename of the form filename*.</returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName">
+        <summary>A suggestion for how to construct a filename for   storing the message payload to be used if the entity is   detached and stored in a separate file.</summary>
+        <returns>Returns <see cref="T:System.String" />.A suggested filename.</returns>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Equals(System.Object)">
+        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  object.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
+        <param name="obj">The object to compare with the current object.</param>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType">
+        <summary>The disposition type for a content body part.</summary>
+        <returns>Returns <see cref="T:System.String" />.The disposition type. </returns>
+      </member>
+    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate">
+        <summary>The date at which   the file was created.</summary>
+        <returns>Returns <see cref="T:System.DateTimeOffset" />.The file creation date.</returns>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.String)">
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> class.</summary>
+      </member>
+    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.Net.Http.Headers.ContentDispositionHeaderValue)">
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> class.</summary>
+      </member>
+    <member name="M:System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+    <member name="M:System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)" />
+    <member name="M:System.Net.Http.HttpMessageInvoker.Dispose" />
+    <member name="M:System.Net.Http.HttpMessageInvoker.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)" />
+    <member name="M:System.Net.Http.HttpMessageInvoker.#ctor(System.Net.Http.HttpMessageHandler)" />
+    <member name="M:System.Net.Http.HttpContent.ReadAsStringAsync">
+        <summary>Write the HTTP content to a string as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+      </member>
+    <member name="M:System.Net.Http.HttpContent.ReadAsStreamAsync">
+        <summary>Write the HTTP content to a stream as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+      </member>
+    <member name="M:System.Net.Http.HttpContent.ReadAsByteArrayAsync">
+        <summary>Write the HTTP content to a byte array as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetStringAsync(System.Uri)">
+        <summary>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetStringAsync(System.String)">
+        <summary>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetStreamAsync(System.Uri)">
+        <summary>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetStreamAsync(System.String)">
+        <summary>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetByteArrayAsync(System.Uri)">
+        <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetByteArrayAsync(System.String)">
+        <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)">
+        <summary>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
+        <summary>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)">
+        <summary>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="M:System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
+        <summary>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
+    <member name="F:System.Net.Http.ClientCertificateOption.Automatic">
+        <summary>The <see cref="T:System.Net.Http.HttpClientHandler" /> will attempt to provide  all available client certificates  automatically.</summary>
+      </member>
+    <member name="F:System.Net.Http.ClientCertificateOption.Manual">
+        <summary>The application manually provides the client certificates to the <see cref="T:System.Net.Http.WebRequestHandler" />. This value is the default. </summary>
+      </member>
     <member name="T:System.Net.Http.ByteArrayContent">
       <summary>Provides HTTP content based on a byte array.</summary>
     </member>
@@ -21,14 +185,14 @@
       <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="offset" /> parameter is less than zero.-or-The <paramref name="offset" /> parameter is greater than the length of content specified by the <paramref name="content" /> parameter.-or-The <paramref name="count " /> parameter is less than zero.-or-The <paramref name="count" /> parameter is greater than the length of content specified by the <paramref name="content" /> parameter - minus the <paramref name="offset" /> parameter.</exception>
     </member>
     <member name="M:System.Net.Http.ByteArrayContent.CreateContentReadStreamAsync">
-      <summary>Creates an HTTP content stream as an asynchronous operation for reading whose backing store is memory from the <see cref="T:System.Net.Http.ByteArrayContent" />.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-    </member>
+        <summary>Creates an HTTP content stream as an asynchronous operation for reading whose backing store is memory from the <see cref="T:System.Net.Http.ByteArrayContent" />.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+      </member>
     <member name="M:System.Net.Http.ByteArrayContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)">
       <summary>Serialize and write the byte array provided in the constructor to an HTTP content stream as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />. The task object representing the asynchronous operation.</returns>
       <param name="stream">The target stream.</param>
-      <param name="context">Information about the transport, like channel binding token. This parameter may be null.</param>
+      <param name="context">Information about the transport, like channel binding token. Параметр может принимать значение NULL.</param>
     </member>
     <member name="M:System.Net.Http.ByteArrayContent.TryComputeLength(System.Int64@)">
       <summary>Determines whether a byte array has a valid length in bytes.</summary>
@@ -36,20 +200,14 @@
       <param name="length">The length in bytes of the byte array.</param>
     </member>
     <member name="T:System.Net.Http.ClientCertificateOption">
-      <summary>Specifies how client certificates are provided.</summary>
-    </member>
-    <member name="F:System.Net.Http.ClientCertificateOption.Manual">
-      <summary>The application manually provides the client certificates to the <see cref="T:System.Net.Http.WebRequestHandler" />. This value is the default. </summary>
-    </member>
-    <member name="F:System.Net.Http.ClientCertificateOption.Automatic">
-      <summary>The <see cref="T:System.Net.Http.HttpClientHandler" /> will attempt to provide  all available client certificates  automatically.</summary>
-    </member>
+        <summary>Specifies how client certificates are provided.</summary>
+      </member>
     <member name="T:System.Net.Http.DelegatingHandler">
       <summary>A base type for HTTP handlers that delegate the processing of HTTP response messages to another handler, called the inner handler.</summary>
     </member>
     <member name="M:System.Net.Http.DelegatingHandler.#ctor">
-      <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
-    </member>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
+      </member>
     <member name="M:System.Net.Http.DelegatingHandler.#ctor(System.Net.Http.HttpMessageHandler)">
       <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class with a specific inner handler.</summary>
       <param name="innerHandler">The inner handler which is responsible for processing the HTTP response messages.</param>
@@ -59,9 +217,9 @@
       <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources. </param>
     </member>
     <member name="P:System.Net.Http.DelegatingHandler.InnerHandler">
-      <summary>Gets or sets the inner handler which processes the HTTP response messages.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.HttpMessageHandler" />.The inner handler for HTTP response messages.</returns>
-    </member>
+        <summary>Gets or sets the inner handler which processes the HTTP response messages.</summary>
+        <returns>Returns <see cref="T:System.Net.Http.HttpMessageHandler" />.The inner handler for HTTP response messages.</returns>
+      </member>
     <member name="M:System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
       <summary>Sends an HTTP request to the inner handler to send to the server as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />. The task object representing the asynchronous operation.</returns>
@@ -74,7 +232,7 @@
     </member>
     <member name="M:System.Net.Http.FormUrlEncodedContent.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
       <summary>Initializes a new instance of the <see cref="T:System.Net.Http.FormUrlEncodedContent" /> class with a specific collection of name/value pairs.</summary>
-      <param name="nameValueCollection">A collection of name/value pairs.</param>
+      <param name="nameValueCollection">Коллекция пар имен и значений.</param>
     </member>
     <member name="T:System.Net.Http.HttpClient">
       <summary>Provides a base class for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. </summary>
@@ -86,11 +244,7 @@
       <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with a specific handler.</summary>
       <param name="handler">The HTTP handler stack to use for sending requests. </param>
     </member>
-    <member name="M:System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpClient" /> class with a specific handler.</summary>
-      <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler" /> responsible for processing the HTTP response messages.</param>
-      <param name="disposeHandler">true if the inner handler should be disposed of by Dispose(),false if you intend to reuse the inner handler.</param>
-    </member>
+    <member name="M:System.Net.Http.HttpClient.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)" />
     <member name="P:System.Net.Http.HttpClient.BaseAddress">
       <summary>Gets or sets the base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.</summary>
       <returns>Returns <see cref="T:System.Uri" />.The base address of Uniform Resource Identifier (URI) of the Internet resource used when sending requests.</returns>
@@ -109,12 +263,12 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
-      <summary>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.DeleteAsync(System.Uri)">
       <summary>Send a DELETE request to the specified Uri as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
@@ -122,12 +276,12 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)">
-      <summary>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.Dispose(System.Boolean)">
       <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpClient" /> and optionally disposes of the managed resources.</summary>
       <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources.</param>
@@ -139,27 +293,12 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)">
-      <summary>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="completionOption">An HTTP completion option value that indicates when the operation should be considered completed.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
-      <summary>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)">
-      <summary>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="completionOption">An HTTP completion option value that indicates when the operation should be considered completed.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.GetAsync(System.Uri)">
       <summary>Send a GET request to the specified Uri as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
@@ -167,69 +306,18 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)">
-      <summary>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">
-      <summary>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)">
-      <summary>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetByteArrayAsync(System.String)">
-      <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetByteArrayAsync(System.Uri)">
-      <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetStreamAsync(System.String)">
-      <summary>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetStreamAsync(System.Uri)">
-      <summary>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetStringAsync(System.String)">
-      <summary>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
-    <member name="M:System.Net.Http.HttpClient.GetStringAsync(System.Uri)">
-      <summary>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="P:System.Net.Http.HttpClient.MaxResponseContentBufferSize">
       <summary>Gets or sets the maximum number of bytes to buffer when reading the response content.</summary>
       <returns>Returns <see cref="T:System.Int32" />.The maximum number of bytes to buffer when reading the response content. The default value for this property is 64K.</returns>
       <exception cref="T:System.ArgumentOutOfRangeException">The size specified is less than or equal to zero.</exception>
       <exception cref="T:System.InvalidOperationException">An operation has already been started on the current instance. </exception>
-      <exception cref="T:System.ObjectDisposedException">The current instance has been disposed. </exception>
+      <exception cref="T:System.ObjectDisposedException">Текущий экземпляр был удален. </exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent)">
       <summary>Send a POST request to the specified Uri as an asynchronous operation.</summary>
@@ -239,13 +327,13 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)">
-      <summary>Send a POST request with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="content">The HTTP request content sent to the server.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a POST request with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="content">The HTTP request content sent to the server.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)">
       <summary>Send a POST request to the specified Uri as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
@@ -254,13 +342,13 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)">
-      <summary>Send a POST request with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="content">The HTTP request content sent to the server.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a POST request with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="content">The HTTP request content sent to the server.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent)">
       <summary>Send a PUT request to the specified Uri as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
@@ -269,13 +357,13 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)">
-      <summary>Send a PUT request with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="content">The HTTP request content sent to the server.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a PUT request with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="content">The HTTP request content sent to the server.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)">
       <summary>Send a PUT request to the specified Uri as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
@@ -284,13 +372,13 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.HttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)">
-      <summary>Send a PUT request with a cancellation token as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="requestUri">The Uri the request is sent to.</param>
-      <param name="content">The HTTP request content sent to the server.</param>
-      <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
-    </member>
+        <summary>Send a PUT request with a cancellation token as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+        <param name="requestUri">The Uri the request is sent to.</param>
+        <param name="content">The HTTP request content sent to the server.</param>
+        <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+      </member>
     <member name="M:System.Net.Http.HttpClient.SendAsync(System.Net.Http.HttpRequestMessage)">
       <summary>Send an HTTP request as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
@@ -328,7 +416,7 @@
       <returns>Returns <see cref="T:System.TimeSpan" />.The number of milliseconds to wait before the request times out.</returns>
       <exception cref="T:System.ArgumentOutOfRangeException">The timeout specified is less than or equal to zero and is not <see cref="F:System.Threading.Timeout.Infinite" />.</exception>
       <exception cref="T:System.InvalidOperationException">An operation has already been started on the current instance. </exception>
-      <exception cref="T:System.ObjectDisposedException">The current instance has been disposed.</exception>
+      <exception cref="T:System.ObjectDisposedException">Текущий экземпляр был удален.</exception>
     </member>
     <member name="T:System.Net.Http.HttpClientHandler">
       <summary>The default message handler used by <see cref="T:System.Net.Http.HttpClient" />.  </summary>
@@ -345,16 +433,16 @@
       <returns>Returns <see cref="T:System.Net.DecompressionMethods" />.The automatic decompression method used by the handler. The default value is <see cref="F:System.Net.DecompressionMethods.None" />.</returns>
     </member>
     <member name="P:System.Net.Http.HttpClientHandler.ClientCertificateOptions">
-      <summary>Gets or sets the collection of security certificates that are associated with this handler.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.ClientCertificateOption" />.The collection of security certificates associated with this handler.</returns>
-    </member>
+        <summary>Gets or sets the collection of security certificates that are associated with this handler.</summary>
+        <returns>Returns <see cref="T:System.Net.Http.ClientCertificateOption" />.The collection of security certificates associated with this handler.</returns>
+      </member>
     <member name="P:System.Net.Http.HttpClientHandler.CookieContainer">
       <summary>Gets or sets the cookie container used to store server cookies by the handler.</summary>
       <returns>Returns <see cref="T:System.Net.CookieContainer" />.The cookie container used to store server cookies by the handler.</returns>
     </member>
     <member name="P:System.Net.Http.HttpClientHandler.Credentials">
       <summary>Gets or sets authentication information used by this handler.</summary>
-      <returns>Returns <see cref="T:System.Net.ICredentials" />.The authentication credentials associated with the handler. The default is null.</returns>
+      <returns>Returns <see cref="T:System.Net.ICredentials" />.The authentication credentials associated with the handler. По умолчанию используется значение null.</returns>
     </member>
     <member name="M:System.Net.Http.HttpClientHandler.Dispose(System.Boolean)">
       <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpClientHandler" /> and optionally disposes of the managed resources.</summary>
@@ -370,11 +458,11 @@
     </member>
     <member name="P:System.Net.Http.HttpClientHandler.PreAuthenticate">
       <summary>Gets or sets a value that indicates whether the handler sends an Authorization header with the request.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true for the handler to send an HTTP Authorization header with requests after authentication has taken place; otherwise, false. The default is false.</returns>
+      <returns>Returns <see cref="T:System.Boolean" />.true for the handler to send an HTTP Authorization header with requests after authentication has taken place; otherwise, false. Значение по умолчанию — false.</returns>
     </member>
     <member name="P:System.Net.Http.HttpClientHandler.Proxy">
       <summary>Gets or sets proxy information used by the handler.</summary>
-      <returns>Returns <see cref="T:System.Net.IWebProxy" />.The proxy information used by the handler. The default value is null.</returns>
+      <returns>Returns <see cref="T:System.Net.IWebProxy" />.The proxy information used by the handler. Значение по умолчанию — NULL.</returns>
     </member>
     <member name="M:System.Net.Http.HttpClientHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
       <summary>Creates an instance of  <see cref="T:System.Net.Http.HttpResponseMessage" /> based on the information provided in the <see cref="T:System.Net.Http.HttpRequestMessage" /> as an operation that will not block.</summary>
@@ -431,12 +519,12 @@
       <summary>Write the HTTP content to a stream as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.The task object representing the asynchronous operation.</returns>
       <param name="stream">The target stream.</param>
-      <param name="context">Information about the transport (channel binding token, for example). This parameter may be null.</param>
+      <param name="context">Information about the transport (channel binding token, for example). Параметр может принимать значение NULL.</param>
     </member>
     <member name="M:System.Net.Http.HttpContent.CreateContentReadStreamAsync">
-      <summary>Write the HTTP content to a memory stream as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-    </member>
+        <summary>Write the HTTP content to a memory stream as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+      </member>
     <member name="M:System.Net.Http.HttpContent.Dispose">
       <summary>Releases the unmanaged resources and disposes of the managed resources used by the <see cref="T:System.Net.Http.HttpContent" />.</summary>
     </member>
@@ -452,28 +540,12 @@
       <summary>Serialize the HTTP content to a memory buffer as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.The task object representing the asynchronous operation.</returns>
     </member>
-    <member name="M:System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)">
-      <summary>Serialize the HTTP content to a memory buffer as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.The task object representing the asynchronous operation.</returns>
-      <param name="maxBufferSize">The maximum size, in bytes, of the buffer to use.</param>
-    </member>
-    <member name="M:System.Net.Http.HttpContent.ReadAsByteArrayAsync">
-      <summary>Write the HTTP content to a byte array as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-    </member>
-    <member name="M:System.Net.Http.HttpContent.ReadAsStreamAsync">
-      <summary>Write the HTTP content to a stream as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-    </member>
-    <member name="M:System.Net.Http.HttpContent.ReadAsStringAsync">
-      <summary>Write the HTTP content to a string as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-    </member>
+    <member name="M:System.Net.Http.HttpContent.LoadIntoBufferAsync(System.Int64)" />
     <member name="M:System.Net.Http.HttpContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)">
       <summary>Serialize the HTTP content to a stream as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.The task object representing the asynchronous operation.</returns>
       <param name="stream">The target stream.</param>
-      <param name="context">Information about the transport (channel binding token, for example). This parameter may be null.</param>
+      <param name="context">Information about the transport (channel binding token, for example). Параметр может принимать значение NULL.</param>
     </member>
     <member name="M:System.Net.Http.HttpContent.TryComputeLength(System.Int64@)">
       <summary>Determines whether the HTTP content has a valid length in bytes.</summary>
@@ -500,32 +572,7 @@
       <param name="cancellationToken">The cancellation token to cancel operation.</param>
       <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was null.</exception>
     </member>
-    <member name="T:System.Net.Http.HttpMessageInvoker">
-      <summary>The base type for <see cref="T:System.Net.Http.HttpClient" /> and other message originators.</summary>
-    </member>
-    <member name="M:System.Net.Http.HttpMessageInvoker.#ctor(System.Net.Http.HttpMessageHandler)">
-      <summary>Initializes an instance of a <see cref="T:System.Net.Http.HttpMessageInvoker" /> class with a specific <see cref="T:System.Net.Http.HttpMessageHandler" />.</summary>
-      <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler" /> responsible for processing the HTTP response messages.</param>
-    </member>
-    <member name="M:System.Net.Http.HttpMessageInvoker.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)">
-      <summary>Initializes an instance of a <see cref="T:System.Net.Http.HttpMessageInvoker" /> class with a specific <see cref="T:System.Net.Http.HttpMessageHandler" />.</summary>
-      <param name="handler">The <see cref="T:System.Net.Http.HttpMessageHandler" /> responsible for processing the HTTP response messages.</param>
-      <param name="disposeHandler">true if the inner handler should be disposed of by Dispose(),false if you intend to reuse the inner handler.</param>
-    </member>
-    <member name="M:System.Net.Http.HttpMessageInvoker.Dispose">
-      <summary>Releases the unmanaged resources and disposes of the managed resources used by the <see cref="T:System.Net.Http.HttpMessageInvoker" />.</summary>
-    </member>
-    <member name="M:System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)">
-      <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpMessageInvoker" /> and optionally disposes of the managed resources.</summary>
-      <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources.</param>
-    </member>
-    <member name="M:System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
-      <summary>Send an HTTP request as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-      <param name="request">The HTTP request message to send.</param>
-      <param name="cancellationToken">The cancellation token to cancel operation.</param>
-      <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was null.</exception>
-    </member>
+    <member name="T:System.Net.Http.HttpMessageInvoker" />
     <member name="T:System.Net.Http.HttpMethod">
       <summary>A helper class for retrieving and comparing standard HTTP methods.</summary>
     </member>
@@ -552,7 +599,7 @@
       <returns>Returns <see cref="T:System.Net.Http.HttpMethod" />.</returns>
     </member>
     <member name="M:System.Net.Http.HttpMethod.GetHashCode">
-      <summary>Serves as a hash function for this type.</summary>
+      <summary>Служит в качестве хэш-функции для данного типа.</summary>
       <returns>Returns <see cref="T:System.Int32" />.A hash code for the current <see cref="T:System.Object" />.</returns>
     </member>
     <member name="P:System.Net.Http.HttpMethod.Head">
@@ -603,12 +650,12 @@
     </member>
     <member name="M:System.Net.Http.HttpRequestException.#ctor(System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpRequestException" /> class with a specific message that describes the current exception.</summary>
-      <param name="message">A message that describes the current exception.</param>
+      <param name="message">Сообщение, описывающее текущее исключение.</param>
     </member>
     <member name="M:System.Net.Http.HttpRequestException.#ctor(System.String,System.Exception)">
       <summary>Initializes a new instance of the <see cref="T:System.Net.Http.HttpRequestException" /> class with a specific message that describes the current exception and an inner exception.</summary>
-      <param name="message">A message that describes the current exception.</param>
-      <param name="inner">The inner exception.</param>
+      <param name="message">Сообщение, описывающее текущее исключение.</param>
+      <param name="inner">Внутреннее исключение.</param>
     </member>
     <member name="T:System.Net.Http.HttpRequestMessage">
       <summary>Represents a HTTP request message.</summary>
@@ -718,8 +765,8 @@
       <summary>A base type for handlers which only do some small processing of request and/or response messages.</summary>
     </member>
     <member name="M:System.Net.Http.MessageProcessingHandler.#ctor">
-      <summary>Creates an instance of a <see cref="T:System.Net.Http.MessageProcessingHandler" /> class.</summary>
-    </member>
+        <summary>Creates an instance of a <see cref="T:System.Net.Http.MessageProcessingHandler" /> class.</summary>
+      </member>
     <member name="M:System.Net.Http.MessageProcessingHandler.#ctor(System.Net.Http.HttpMessageHandler)">
       <summary>Creates an instance of a <see cref="T:System.Net.Http.MessageProcessingHandler" /> class with a specific inner handler.</summary>
       <param name="innerHandler">The inner handler which is responsible for processing the HTTP response messages.</param>
@@ -767,9 +814,9 @@
       <exception cref="T:System.ArgumentNullException">The <paramref name="content" /> was null.</exception>
     </member>
     <member name="M:System.Net.Http.MultipartContent.Dispose(System.Boolean)">
-      <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.MultipartContent" /> and optionally disposes of the managed resources.</summary>
-      <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources.</param>
-    </member>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.MultipartContent" /> and optionally disposes of the managed resources.</summary>
+        <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources.</param>
+      </member>
     <member name="M:System.Net.Http.MultipartContent.GetEnumerator">
       <summary>Returns an enumerator that iterates through the collection of <see cref="T:System.Net.Http.HttpContent" /> objects that get serialized using the multipart/* content type specification..</summary>
       <returns>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />.An object that can be used to iterate through the collection.</returns>
@@ -778,7 +825,7 @@
       <summary>Serialize the multipart HTTP content to a stream as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.The task object representing the asynchronous operation.</returns>
       <param name="stream">The target stream.</param>
-      <param name="context">Information about the transport (channel binding token, for example). This parameter may be null.</param>
+      <param name="context">Information about the transport (channel binding token, for example). Параметр может принимать значение NULL.</param>
     </member>
     <member name="M:System.Net.Http.MultipartContent.System#Collections#IEnumerable#GetEnumerator">
       <summary>The explicit implementation of the <see cref="M:System.Net.Http.MultipartContent.GetEnumerator" /> method.</summary>
@@ -836,9 +883,9 @@
       <exception cref="T:System.OutOfRangeException">The <paramref name="bufferSize" /> was less than or equal to zero. </exception>
     </member>
     <member name="M:System.Net.Http.StreamContent.CreateContentReadStreamAsync">
-      <summary>Write the HTTP stream content to a memory stream as an asynchronous operation.</summary>
-      <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
-    </member>
+        <summary>Write the HTTP stream content to a memory stream as an asynchronous operation.</summary>
+        <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+      </member>
     <member name="M:System.Net.Http.StreamContent.Dispose(System.Boolean)">
       <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.StreamContent" /> and optionally disposes of the managed resources.</summary>
       <param name="disposing">true to release both managed and unmanaged resources; false to releases only unmanaged resources.</param>
@@ -847,7 +894,7 @@
       <summary>Serialize the HTTP content to a stream as an asynchronous operation.</summary>
       <returns>Returns <see cref="T:System.Threading.Tasks.Task" />.The task object representing the asynchronous operation.</returns>
       <param name="stream">The target stream.</param>
-      <param name="context">Information about the transport (channel binding token, for example). This parameter may be null.</param>
+      <param name="context">Information about the transport (channel binding token, for example). Параметр может принимать значение NULL.</param>
     </member>
     <member name="M:System.Net.Http.StreamContent.TryComputeLength(System.Int64@)">
       <summary>Determines whether the stream content has a valid length in bytes.</summary>
@@ -873,7 +920,7 @@
       <param name="mediaType">The media type to use for the content.</param>
     </member>
     <member name="T:System.Net.Http.Headers.AuthenticationHeaderValue">
-      <summary>Represents authentication information in Authorization, ProxyAuthorization, WWW-Authenticate, and Proxy-Authenticate header values.</summary>
+      <summary>Represents authentication information in Authorization, ProxyAuthorization, WWW-Authneticate, and Proxy-Authenticate header values.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.AuthenticationHeaderValue.#ctor(System.String)">
       <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> class.</summary>
@@ -921,7 +968,7 @@
     <member name="M:System.Net.Http.Headers.AuthenticationHeaderValue.TryParse(System.String,System.Net.Http.Headers.AuthenticationHeaderValue@)">
       <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> information.</summary>
       <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
+      <param name="input">Строка, которую следует проверить.</param>
       <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> version of the string.</param>
     </member>
     <member name="T:System.Net.Http.Headers.CacheControlHeaderValue">
@@ -1023,217 +1070,90 @@
     <member name="M:System.Net.Http.Headers.CacheControlHeaderValue.TryParse(System.String,System.Net.Http.Headers.CacheControlHeaderValue@)">
       <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.CacheControlHeaderValue" /> information.</summary>
       <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.CacheControlHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
+      <param name="input">Строка, которую следует проверить.</param>
       <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.CacheControlHeaderValue" /> version of the string.</param>
     </member>
     <member name="T:System.Net.Http.Headers.ContentDispositionHeaderValue">
-      <summary>Represents the value of the Content-Disposition header.</summary>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.Net.Http.Headers.ContentDispositionHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> class.</summary>
-      <param name="source">A <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />. </param>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> class.</summary>
-      <param name="dispositionType">A string that contains a <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />.</param>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.CreationDate">
-      <summary>The date at which   the file was created.</summary>
-      <returns>Returns <see cref="T:System.DateTimeOffset" />.The file creation date.</returns>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.DispositionType">
-      <summary>The disposition type for a content body part.</summary>
-      <returns>Returns <see cref="T:System.String" />.The disposition type. </returns>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileName">
-      <summary>A suggestion for how to construct a filename for   storing the message payload to be used if the entity is   detached and stored in a separate file.</summary>
-      <returns>Returns <see cref="T:System.String" />.A suggested filename.</returns>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.FileNameStar">
-      <summary>A suggestion for how to construct filenames for   storing message payloads to be used if the entities are    detached and stored in a separate files.</summary>
-      <returns>Returns <see cref="T:System.String" />.A suggested filename of the form filename*.</returns>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an  <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ModificationDate">
-      <summary>The date at   which the file was last modified. </summary>
-      <returns>Returns <see cref="T:System.DateTimeOffset" />.The file modification date.</returns>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Name">
-      <summary>The name for a content body part.</summary>
-      <returns>Returns <see cref="T:System.String" />.The name for the content body part.</returns>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Parameters">
-      <summary>A set of parameters included the Content-Disposition header.</summary>
-      <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.A collection of parameters. </returns>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />.An <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  instance.</returns>
-      <param name="input">A string that represents content disposition header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid content disposition header value information.</exception>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.ReadDate">
-      <summary>The date the file was last read.</summary>
-      <returns>Returns <see cref="T:System.DateTimeOffset" />.The last read date.</returns>
-    </member>
-    <member name="P:System.Net.Http.Headers.ContentDispositionHeaderValue.Size">
-      <summary>The approximate size, in bytes, of the file. </summary>
-      <returns>Returns <see cref="T:System.Int64" />.The approximate size, in bytes.</returns>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />  instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
-    </member>
-    <member name="M:System.Net.Http.Headers.ContentDispositionHeaderValue.TryParse(System.String,System.Net.Http.Headers.ContentDispositionHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" /> version of the string.</param>
-    </member>
+        <summary>Represents the value of the Content-Disposition header.</summary>
+      </member>
     <member name="T:System.Net.Http.Headers.ContentRangeHeaderValue">
       <summary>Represents the value of the Content-Range header.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> class.</summary>
-      <param name="length">The starting or ending point of the range, in bytes.</param>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64,System.Int64)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> class.</summary>
-      <param name="from">The position, in bytes, at which to start sending data.</param>
-      <param name="to">The position, in bytes, at which to stop sending data.</param>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.#ctor(System.Int64,System.Int64,System.Int64)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> class.</summary>
-      <param name="from">The position, in bytes, at which to start sending data.</param>
-      <param name="to">The position, in bytes, at which to stop sending data.</param>
-      <param name="length">The starting or ending point of the range, in bytes.</param>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified Object is equal to the current <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ContentRangeHeaderValue.From">
-      <summary>Gets the position at which to start sending data.</summary>
-      <returns>Returns <see cref="T:System.Int64" />.The position, in bytes, at which to start sending data.</returns>
+      <returns>Returns <see cref="T:System.Int64" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ContentRangeHeaderValue.HasLength">
-      <summary>Gets whether the Content-Range header has a length specified.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the Content-Range has a length specified; otherwise, false.</returns>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ContentRangeHeaderValue.HasRange">
-      <summary>Gets whether the Content-Range has a range specified. </summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the Content-Range has a range specified; otherwise, false.</returns>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ContentRangeHeaderValue.Length">
-      <summary>Gets the length of the full entity-body.</summary>
-      <returns>Returns <see cref="T:System.Int64" />.The length of the full entity-body.</returns>
+      <returns>Returns <see cref="T:System.Int64" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" />.An <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents content range header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid content range header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ContentRangeHeaderValue.To">
-      <summary>Gets the position at which to stop sending data.</summary>
-      <returns>Returns <see cref="T:System.Int64" />.The position at which to stop sending data.</returns>
+      <returns>Returns <see cref="T:System.Int64" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ContentRangeHeaderValue.TryParse(System.String,System.Net.Http.Headers.ContentRangeHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.ContentRangeHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ContentRangeHeaderValue.Unit">
-      <summary>The range units used.</summary>
-      <returns>Returns <see cref="T:System.String" />.A <see cref="T:System.String" /> that contains range units. </returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.EntityTagHeaderValue">
       <summary>Represents an entity-tag header value.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> class.</summary>
-      <param name="tag">A string that contains an <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</param>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.#ctor(System.String,System.Boolean)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> class.</summary>
-      <param name="tag">A string that contains an  <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</param>
-      <param name="isWeak">A value that indicates if this entity-tag header is a weak validator. If the entity-tag header is weak validator, then <paramref name="isWeak" /> should be set to true. If the entity-tag header is a strong validator, then <paramref name="isWeak" /> should be set to false.</param>
     </member>
     <member name="P:System.Net.Http.Headers.EntityTagHeaderValue.Any">
-      <summary>Gets the entity-tag header value.</summary>
       <returns>Returns <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.EntityTagHeaderValue.IsWeak">
-      <summary>Gets whether the entity-tag is prefaced by a weakness indicator.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the entity-tag is prefaced by a weakness indicator; otherwise, false.</returns>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.An <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents entity tag header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid entity tag header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.EntityTagHeaderValue.Tag">
-      <summary>Gets the opaque quoted string. </summary>
-      <returns>Returns <see cref="T:System.String" />.An opaque quoted string.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.EntityTagHeaderValue.TryParse(System.String,System.Net.Http.Headers.EntityTagHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.HttpContentHeaders">
       <summary>Represents the collection of Content Headers as defined in RFC 2616.</summary>
@@ -1243,9 +1163,8 @@
       <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.The value of the Allow header on an HTTP response.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.HttpContentHeaders.ContentDisposition">
-      <summary>Gets the value of the Content-Disposition content header on an HTTP response.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />.The value of the Content-Disposition content header on an HTTP response.</returns>
-    </member>
+        <returns>Returns <see cref="T:System.Net.Http.Headers.ContentDispositionHeaderValue" />.</returns>
+      </member>
     <member name="P:System.Net.Http.Headers.HttpContentHeaders.ContentEncoding">
       <summary>Gets the value of the Content-Encoding content header on an HTTP response.</summary>
       <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.The value of the Content-Encoding content header on an HTTP response.</returns>
@@ -1296,7 +1215,7 @@
     <member name="M:System.Net.Http.Headers.HttpHeaders.Add(System.String,System.String)">
       <summary>Adds the specified header and its value into the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
       <param name="name">The header to add to the collection.</param>
-      <param name="value">The content of the header.</param>
+      <param name="value">Содержимое заголовка.</param>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaders.Clear">
       <summary>Removes all headers from the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
@@ -1307,7 +1226,7 @@
       <param name="name">The specific header.</param>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaders.GetEnumerator">
-      <summary>Returns an enumerator that can iterate through the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> instance.</summary>
+      <summary>Возвращает перечислитель, с помощью которого можно выполнять итерацию элементов экземпляра <see cref="T:System.Net.Http.Headers.HttpHeaders" />.</summary>
       <returns>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />.An enumerator for the <see cref="T:System.Net.Http.Headers.HttpHeaders" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaders.GetValues(System.String)">
@@ -1321,25 +1240,12 @@
       <param name="name">The name of the header to remove from the collection. </param>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaders.System#Collections#IEnumerable#GetEnumerator">
-      <summary>Gets an enumerator that can iterate through a <see cref="T:System.Net.Http.Headers.HttpHeaders" />.</summary>
-      <returns>Returns <see cref="T:System.Collections.IEnumerator" />.An instance of an implementation of an <see cref="T:System.Collections.IEnumerator" /> that can iterate through a <see cref="T:System.Net.Http.Headers.HttpHeaders" />.</returns>
+      <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaders.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.HttpHeaders" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})">
-      <summary>Returns a value that indicates whether the specified header and its values were added to the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection without validating the provided information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified header <paramref name="name" /> and <paramref name="values" /> could be added to the collection; otherwise false.</returns>
-      <param name="name">The header to add to the collection.</param>
-      <param name="values">The values of the header.</param>
-    </member>
-    <member name="M:System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.String)">
-      <summary>Returns a value that indicates whether the specified header and its value were added to the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection without validating the provided information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified header <paramref name="name" /> and <paramref name="value" /> could be added to the collection; otherwise false.</returns>
-      <param name="name">The header to add to the collection.</param>
-      <param name="value">The content of the header.</param>
-    </member>
+    <member name="M:System.Net.Http.Headers.HttpHeaders.TryAddWithoutValidation(System.String,System.Collections.Generic.IEnumerable{System.String})" />
     <member name="M:System.Net.Http.Headers.HttpHeaders.TryGetValues(System.String,System.Collections.Generic.IEnumerable{System.String}@)">
       <summary>Return if a specified header and specified values are stored in the <see cref="T:System.Net.Http.Headers.HttpHeaders" /> collection.</summary>
       <returns>Returns <see cref="T:System.Boolean" />.true is the specified header <paramref name="name" /> and values are stored in the collection; otherwise false.</returns>
@@ -1348,14 +1254,17 @@
     </member>
     <member name="T:System.Net.Http.Headers.HttpHeaderValueCollection`1">
       <summary>Represents a collection of header values.</summary>
-      <typeparam name="T"></typeparam>
+      <typeparam name="T" />
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Add(`0)"></member>
-    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Clear"></member>
+    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Add(`0)">
+    </member>
+    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Clear">
+    </member>
     <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Contains(`0)">
       <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.CopyTo(`0[],System.Int32)"></member>
+    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.CopyTo(`0[],System.Int32)">
+    </member>
     <member name="P:System.Net.Http.Headers.HttpHeaderValueCollection`1.Count">
       <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
@@ -1365,7 +1274,8 @@
     <member name="P:System.Net.Http.Headers.HttpHeaderValueCollection`1.IsReadOnly">
       <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
-    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.ParseAdd(System.String)"></member>
+    <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.ParseAdd(System.String)">
+    </member>
     <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.Remove(`0)">
       <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
@@ -1373,13 +1283,10 @@
       <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.ToString">
-      <summary>Returns a string that represents the current XXX object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.HttpHeaderValueCollection`1.TryParseAdd(System.String)">
-      <summary>Determines whether a string is valid XXX information.</summary>
       <returns>Returns <see cref="T:System.Boolean" />.</returns>
-      <param name="input">The string to validate.</param>
     </member>
     <member name="T:System.Net.Http.Headers.HttpRequestHeaders">
       <summary>Represents the collection of Request Headers as defined in RFC 2616.</summary>
@@ -1595,294 +1502,190 @@
       <summary>Represents a media-type as defined in the RFC 2616.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> class.</summary>
     </member>
     <member name="P:System.Net.Http.Headers.MediaTypeHeaderValue.CharSet">
-      <summary>Gets or sets the character set.</summary>
-      <returns>Returns <see cref="T:System.String" />.The character set.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.MediaTypeHeaderValue.MediaType">
-      <summary>Gets or sets the media-type header value.</summary>
-      <returns>Returns <see cref="T:System.String" />.The media-type header value.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.MediaTypeHeaderValue.Parameters">
-      <summary>Gets or sets the media-type header value parameters.</summary>
-      <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.The media-type header value parameters.</returns>
+      <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" />.An <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents media type header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid media type header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeHeaderValue.TryParse(System.String,System.Net.Http.Headers.MediaTypeHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue">
       <summary>Represents a content-type header value with an additional quality.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.#ctor(System.String,System.Double)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" />.An <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents media type with quality header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid media type with quality header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Quality">
       <returns>Returns <see cref="T:System.Double" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.MediaTypeWithQualityHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.MediaTypeWithQualityHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.NameValueHeaderValue">
       <summary>Represents a name/value pair.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.#ctor(System.Net.Http.Headers.NameValueHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> class.</summary>
-      <param name="name">The header name.</param>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.#ctor(System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> class.</summary>
-      <param name="name">The header name.</param>
-      <param name="value">The header value.</param>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.NameValueHeaderValue.Name">
-      <summary>Gets the header name.</summary>
-      <returns>Returns <see cref="T:System.String" />.The header name.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" />.An <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents name value header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid name value header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueHeaderValue.TryParse(System.String,System.Net.Http.Headers.NameValueHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.NameValueHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.NameValueHeaderValue.Value">
-      <summary>Gets the header value.</summary>
-      <returns>Returns <see cref="T:System.String" />.The header value.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue">
       <summary>Represents a name/value pair with parameters.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.#ctor(System.Net.Http.Headers.NameValueWithParametersHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.#ctor(System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.NameValueWithParametersHeaderValue.Parameters">
       <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" />.An <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents name value with parameter header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid name value with parameter header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.NameValueWithParametersHeaderValue.TryParse(System.String,System.Net.Http.Headers.NameValueWithParametersHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.NameValueWithParametersHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.ProductHeaderValue">
-      <summary>Represents a product token in header value.</summary>
+      <summary>Represents a product header value.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.#ctor(System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ProductHeaderValue.Name">
-      <summary>Gets the name of the product token.</summary>
-      <returns>Returns <see cref="T:System.String" />.The name of the product token.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.ProductHeaderValue" />.An <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents product header value information.</param>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.ProductHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductHeaderValue.TryParse(System.String,System.Net.Http.Headers.ProductHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.ProductHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ProductHeaderValue.Version">
-      <summary>Gets the version of the product token.</summary>
-      <returns>Returns <see cref="T:System.String" />.The version of the product token. </returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.ProductInfoHeaderValue">
       <summary>Represents a value which can either be a product or a comment.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.Net.Http.Headers.ProductHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.#ctor(System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> class.</summary>
     </member>
     <member name="P:System.Net.Http.Headers.ProductInfoHeaderValue.Comment">
       <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" />.An <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents product info header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid product info header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ProductInfoHeaderValue.Product">
       <returns>Returns <see cref="T:System.Net.Http.Headers.ProductHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ProductInfoHeaderValue.TryParse(System.String,System.Net.Http.Headers.ProductInfoHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.ProductInfoHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.RangeConditionHeaderValue">
       <summary>Represents a header value which can either be a date/time or an entity-tag value.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.DateTimeOffset)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.Net.Http.Headers.EntityTagHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> class.</summary>
     </member>
     <member name="P:System.Net.Http.Headers.RangeConditionHeaderValue.Date">
       <returns>Returns <see cref="T:System.DateTimeOffset" />.</returns>
@@ -1891,79 +1694,50 @@
       <returns>Returns <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" />.An <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents range condition header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid range Condition header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeConditionHeaderValue.TryParse(System.String,System.Net.Http.Headers.RangeConditionHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.RangeConditionHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.RangeHeaderValue">
       <summary>Represents the value of the Range header.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.#ctor">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.RangeHeaderValue" />.An <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents range header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid range header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.RangeHeaderValue" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.RangeHeaderValue.Ranges">
       <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeHeaderValue.TryParse(System.String,System.Net.Http.Headers.RangeHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">he string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.RangeHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.RangeHeaderValue.Unit">
       <returns>Returns <see cref="T:System.String" />.</returns>
@@ -1972,39 +1746,31 @@
       <summary>Represents a byte-range header value.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeItemHeaderValue.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RangeItemHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RangeItemHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.RangeItemHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.RangeItemHeaderValue.From">
       <returns>Returns <see cref="T:System.Int64" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeItemHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.RangeItemHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeItemHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.RangeItemHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.RangeItemHeaderValue.To">
       <returns>Returns <see cref="T:System.Int64" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RangeItemHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.RangeItemHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.RetryConditionHeaderValue">
       <summary>Represents a header value which can either be a date/time or a timespan value.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.#ctor(System.DateTimeOffset)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.#ctor(System.TimeSpan)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> class.</summary>
     </member>
     <member name="P:System.Net.Http.Headers.RetryConditionHeaderValue.Date">
       <returns>Returns <see cref="T:System.DateTimeOffset" />.</returns>
@@ -2013,80 +1779,50 @@
       <returns>Returns <see cref="T:System.TimeSpan" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" />.An <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents retry condition header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid retry condition header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.RetryConditionHeaderValue.TryParse(System.String,System.Net.Http.Headers.RetryConditionHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.RetryConditionHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.StringWithQualityHeaderValue">
       <summary>Represents a string header value with an optional quality.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.#ctor(System.String,System.Double)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified Object is equal to the current <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" />.An <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents quality header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid string with quality header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.StringWithQualityHeaderValue.Quality">
       <returns>Returns <see cref="T:System.Double" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.StringWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.StringWithQualityHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.StringWithQualityHeaderValue.Value">
       <returns>Returns <see cref="T:System.String" />.</returns>
@@ -2095,214 +1831,127 @@
       <summary>Represents a transfer-coding header value.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.#ctor(System.Net.Http.Headers.TransferCodingHeaderValue)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified Object is equal to the current <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.TransferCodingHeaderValue.Parameters">
-      <summary>Gets the transfer-coding parameters.</summary>
-      <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.The transfer-coding parameters.</returns>
+      <returns>Returns <see cref="T:System.Collections.Generic.ICollection`1" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" />.An <see cref="T:System.Net.Http.Headers.AuthenticationHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents transfer-coding header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid transfer-coding header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.TransferCodingHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.TransferCodingHeaderValue.Value">
-      <summary>Gets the transfer-coding value.</summary>
-      <returns>Returns <see cref="T:System.String" />.The transfer-coding value.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue">
       <summary>Represents a transfer-coding header value with optional quality.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.#ctor(System.String,System.Double)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> class.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" />.An <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents transfer-coding value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid transfer-coding with quality header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.Quality">
       <returns>Returns <see cref="T:System.Double" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.TransferCodingWithQualityHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.TransferCodingWithQualityHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.ViaHeaderValue">
       <summary>Represents the value of a Via header.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> class.</summary>
-      <param name="protocolVersion">The protocol version of the received protocol.</param>
-      <param name="receivedBy">The host and port that the request or response was received by.</param>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> class.</summary>
-      <param name="protocolVersion">The protocol version of the received protocol.</param>
-      <param name="receivedBy">The host and port that the request or response was received by.</param>
-      <param name="protocolName">The protocol name of the received protocol.</param>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.#ctor(System.String,System.String,System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> class.</summary>
-      <param name="protocolVersion">The protocol version of the received protocol.</param>
-      <param name="receivedBy">The host and port that the request or response was received by.</param>
-      <param name="protocolName">The protocol name of the received protocol.</param>
-      <param name="comment">The comment field used to identify the software of the recipient proxy or gateway.</param>
     </member>
     <member name="P:System.Net.Http.Headers.ViaHeaderValue.Comment">
-      <summary>Gets the comment field used to identify the software of the recipient proxy or gateway.</summary>
-      <returns>Returns <see cref="T:System.String" />.The comment field used to identify the software of the recipient proxy or gateway.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.ViaHeaderValue" />object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.Returns a hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.Headers.ViaHeaderValue" />.An <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents via header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid via header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.ViaHeaderValue" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ViaHeaderValue.ProtocolName">
-      <summary>Gets the protocol name of the received protocol.</summary>
-      <returns>Returns <see cref="T:System.String" />.The protocol name.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ViaHeaderValue.ProtocolVersion">
-      <summary>Gets the protocol version of the received protocol.</summary>
-      <returns>Returns <see cref="T:System.String" />.The protocol version.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.ViaHeaderValue.ReceivedBy">
-      <summary>Gets the host and port that the request or response was received by.</summary>
-      <returns>Returns <see cref="T:System.String" />.The host and port that the request or response was received by.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.A copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.ViaHeaderValue.TryParse(System.String,System.Net.Http.Headers.ViaHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.ViaHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="T:System.Net.Http.Headers.WarningHeaderValue">
       <summary>Represents a warning value used by the Warning header.</summary>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.#ctor(System.Int32,System.String,System.String)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> class.</summary>
-      <param name="code">The specific warning code.</param>
-      <param name="agent">The host that attached the warning.</param>
-      <param name="text">A quoted-string containing the warning text.</param>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.#ctor(System.Int32,System.String,System.String,System.DateTimeOffset)">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> class.</summary>
-      <param name="code">The specific warning code.</param>
-      <param name="agent">The host that attached the warning.</param>
-      <param name="text">A quoted-string containing the warning text.</param>
-      <param name="date">The date/time stamp of the warning.</param>
     </member>
     <member name="P:System.Net.Http.Headers.WarningHeaderValue.Agent">
-      <summary>Gets the host that attached the warning.</summary>
-      <returns>Returns <see cref="T:System.String" />.The host that attached the warning.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.WarningHeaderValue.Code">
-      <summary>Gets the specific warning code.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.The specific warning code.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.WarningHeaderValue.Date">
-      <summary>Gets the date/time stamp of the warning.</summary>
-      <returns>Returns <see cref="T:System.DateTimeOffset" />.The date/time stamp of the warning.</returns>
+      <returns>Returns <see cref="T:System.DateTimeOffset" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.Equals(System.Object)">
-      <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the specified <see cref="T:System.Object" /> is equal to the current object; otherwise, false.</returns>
-      <param name="obj">The object to compare with the current object.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.GetHashCode">
-      <summary>Serves as a hash function for an <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.A hash code for the current object.</returns>
+      <returns>Returns <see cref="T:System.Int32" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.Parse(System.String)">
-      <summary>Converts a string to an <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> instance.</summary>
-      <returns>Returns an <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> instance.</returns>
-      <param name="input">A string that represents authentication header value information.</param>
-      <exception cref="T:System.ArgumentNullException">
-        <paramref name="input" /> is a null reference.</exception>
-      <exception cref="T:System.FormatException">
-        <paramref name="input" /> is not valid authentication header value information.</exception>
+      <returns>Returns <see cref="T:System.Net.Http.Headers.WarningHeaderValue" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.System#ICloneable#Clone">
-      <summary>Creates a new object that is a copy of the current <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> instance.</summary>
-      <returns>Returns <see cref="T:System.Object" />.Returns a copy of the current instance.</returns>
+      <returns>Returns <see cref="T:System.Object" />.</returns>
     </member>
     <member name="P:System.Net.Http.Headers.WarningHeaderValue.Text">
-      <summary>Gets a quoted-string containing the warning text.</summary>
-      <returns>Returns <see cref="T:System.String" />.A quoted-string containing the warning text.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.ToString">
-      <summary>Returns a string that represents the current <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> object.</summary>
-      <returns>Returns <see cref="T:System.String" />.A string that represents the current object.</returns>
+      <returns>Returns <see cref="T:System.String" />.</returns>
     </member>
     <member name="M:System.Net.Http.Headers.WarningHeaderValue.TryParse(System.String,System.Net.Http.Headers.WarningHeaderValue@)">
-      <summary>Determines whether a string is valid <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> information.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if <paramref name="input" /> is valid <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> information; otherwise, false.</returns>
-      <param name="input">The string to validate.</param>
-      <param name="parsedValue">The <see cref="T:System.Net.Http.Headers.WarningHeaderValue" /> version of the string.</param>
+      <returns>Returns <see cref="T:System.Boolean" />.</returns>
     </member>
   </members>
 </doc>

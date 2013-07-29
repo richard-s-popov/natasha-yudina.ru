@@ -1,5 +1,5 @@
 ﻿body {
-    font-size: .85em;
+    font-size: 12px;
     font-family: tahoma, "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
@@ -121,4 +121,105 @@ textarea {
 
 .pano .row .pano-element img {
     height: 100%;
+}
+
+.carousel {
+	width:100%;
+}
+
+.carousel ul {
+    margin: 0;
+}
+
+.carousel li {
+	background:#ccc;
+	color:#666; 
+	float:left;
+	font-weight:bold;
+	font-size:3em;
+	height:80px;
+	list-style:none;
+	padding:20px 0 0 0;
+	margin:0 0 0 0;
+	text-align:center;
+	width:130px;
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.carousel li:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.left-panel {
+    display: inline-block;
+    width: 70%;
+}
+
+.left-panel .item {
+    margin-bottom: 20px;
+}
+
+.left-panel .item .big-view {
+    display: inline-block;
+    width: 350px;
+    height: 285px;
+}
+
+.left-panel .item .big-view img {
+    width: 100%;
+}
+
+.left-panel .item .description {
+    display: inline-block;
+    width: 325px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.left-panel .item .description p {
+    margin-top: 0;
+}
+
+.right-panel {
+    display: inline-block;
+    width: 270px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.right-panel .small-item {
+    height: 70px;
+    margin-top: 0;
+}
+
+.right-panel .small-item .img {
+    display: inline-block;
+    width: 85px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.right-panel .small-item .name {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-panel .small-item .name a {
+    vertical-align: middle;
+    margin-top: 29px;
+    margin-left: 10px;
+    font-size: 11px;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    display: inline-block;
+}
+
+.right-panel .small-item .name a:hover {
+    color: rgb(122, 185, 214);
 }

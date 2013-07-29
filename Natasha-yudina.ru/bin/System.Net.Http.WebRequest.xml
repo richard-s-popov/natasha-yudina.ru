@@ -5,59 +5,59 @@
   </assembly>
   <members>
     <member name="T:System.Net.Http.RtcRequestFactory">
-      <summary>Represents the class that is used to create special <see cref="T:System.Net.Http.HttpRequestMessage" /> for use with the Real-Time-Communications (RTC) background notification infrastructure.</summary>
+      <summary>Представляет класс, используемый для создания специального <see cref="T:System.Net.Http.HttpRequestMessage" /> для использования с инфраструктурой фоновых уведомлений связи в режиме реального времени (RTC).</summary>
     </member>
     <member name="M:System.Net.Http.RtcRequestFactory.Create(System.Net.Http.HttpMethod,System.Uri)">
-      <summary>Creates a special <see cref="T:System.Net.Http.HttpRequestMessage" /> for use with the Real-Time-Communications (RTC) background notification infrastructure.</summary>
-      <returns>Returns <see cref="T:System.Net.Http.HttpRequestMessage" />.An HTTP request message for use with the RTC background notification infrastructure.</returns>
-      <param name="method">The HTTP method.</param>
-      <param name="uri">The Uri the request is sent to.</param>
+      <summary>Создает специальный <see cref="T:System.Net.Http.HttpRequestMessage" /> для использования инфраструктурой фоновых уведомлений связи в режиме реального времени (RTC).</summary>
+      <returns>Возвращает <see cref="T:System.Net.Http.HttpRequestMessage" />. Сообщение запроса HTTP для использования с инфраструктурой уведомлений фона RTC.</returns>
+      <param name="method">Метод HTTP.</param>
+      <param name="uri">Универсальный код ресурса (URI), по которому отправляется запрос.</param>
     </member>
     <member name="T:System.Net.Http.WebRequestHandler">
-      <summary>Provides desktop-specific features not available to Windows Store apps or other environments. </summary>
+      <summary>Обеспечивает функции, зависящие от рабочего стола, недоступные для приложений для Магазина Windows или других сред. </summary>
     </member>
     <member name="M:System.Net.Http.WebRequestHandler.#ctor">
-      <summary>Initializes a new instance of the <see cref="T:System.Net.Http.WebRequestHandler" /> class.</summary>
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.Net.Http.WebRequestHandler" />.</summary>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.AllowPipelining">
-      <summary> Gets or sets a value that indicates whether to pipeline the request to the Internet resource.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true if the request should be pipelined; otherwise, false. The default is true. </returns>
+      <summary>Возвращает или задает значение, указывающее, выполняется ли конвейерная передача запроса в интернет-ресурс.</summary>
+      <returns>Возвращает <see cref="T:System.Boolean" />. Значение true, если должна выполняться конвейерная передача запроса, в противном случае — false. Значение по умолчанию — true.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.AuthenticationLevel">
-      <summary>Gets or sets a value indicating the level of authentication and impersonation used for this request.</summary>
-      <returns>Returns <see cref="T:System.Net.Security.AuthenticationLevel" />.A bitwise combination of the <see cref="T:System.Net.Security.AuthenticationLevel" /> values.  The default value is <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.</returns>
+      <summary>Получает или задает значения, указывающие уровень аутентификации и олицетворения, используемые для этого запроса.</summary>
+      <returns>Возвращает <see cref="T:System.Net.Security.AuthenticationLevel" />. Поразрядное сочетание значений <see cref="T:System.Net.Security.AuthenticationLevel" />. Значение по умолчанию — <see cref="F:System.Net.Security.AuthenticationLevel.MutualAuthRequested" />.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.CachePolicy">
-      <summary>Gets or sets the cache policy for this request.</summary>
-      <returns>Returns <see cref="T:System.Net.Cache.RequestCachePolicy" />.A <see cref="T:System.Net.Cache.RequestCachePolicy" /> object that defines a cache policy. The default is <see cref="P:System.Net.WebRequest.DefaultCachePolicy" />.</returns>
+      <summary>Возвращает или задает политику кэширования для этого запроса.</summary>
+      <returns>Возвращает <see cref="T:System.Net.Cache.RequestCachePolicy" />. Объект <see cref="T:System.Net.Cache.RequestCachePolicy" />, определяющий политику кэширования. Значение по умолчанию: <see cref="P:System.Net.WebRequest.DefaultCachePolicy" />.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.ClientCertificates">
-      <summary>Gets or sets the collection of security certificates that are associated with this request.</summary>
-      <returns>Returns <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />.The collection of security certificates associated with this request.</returns>
+      <summary>Возвращает или задает коллекцию сертификатов безопасности, связанных с данным запросом.</summary>
+      <returns>Возвращает <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" />. Коллекция сертификатов безопасности, связанная с данным запросом.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.ContinueTimeout">
-      <summary>Gets or sets the amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data.</summary>
-      <returns>Returns <see cref="T:System.TimeSpan" />.The amount of time, in milliseconds, the application will wait for 100-continue from the server before uploading data. The default value is 350 milliseconds.</returns>
+      <summary>Получает или задает время (в миллисекундах), в течение которого приложение ожидает от сервера отклика "100-continue", прежде чем отправлять данные.</summary>
+      <returns>Возвращает <see cref="T:System.TimeSpan" />. Время (в миллисекундах), в течение которого приложение ожидает от сервера ответа "100-continue", прежде чем отправлять данные. По умолчанию используется значение 350 миллисекунд.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.ImpersonationLevel">
-      <summary>Gets or sets the impersonation level for the current request.</summary>
-      <returns>Returns <see cref="T:System.Security.Principal.TokenImpersonationLevel" />.The impersonation level for the request. The default is <see cref="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />.</returns>
+      <summary>Возвращает или задает уровень олицетворения для текущего запроса.</summary>
+      <returns>Возвращает <see cref="T:System.Security.Principal.TokenImpersonationLevel" />. Уровень олицетворения для запроса. Значение по умолчанию: <see cref="F:System.Security.Principal.TokenImpersonationLevel.Delegation" />.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.MaxResponseHeadersLength">
-      <summary>Gets or sets the maximum allowed length of the response headers.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.The length, in kilobytes (1024 bytes), of the response headers.</returns>
+      <summary>Получает или задает максимальную допустимую длину заголовков ответов.</summary>
+      <returns>Возвращает <see cref="T:System.Int32" />. Длина заголовков ответа, выраженная в килобайтах (1024 байта).</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.ReadWriteTimeout">
-      <summary>Gets or sets a time-out in milliseconds when writing a request to or reading a response from a server.</summary>
-      <returns>Returns <see cref="T:System.Int32" />.The number of milliseconds before the writing or reading times out. The default value is 300,000 milliseconds (5 minutes). </returns>
+      <summary>Получает или задает время ожидания в миллисекундах при записи запроса на сервер или при чтении отклика с него.</summary>
+      <returns>Возвращает <see cref="T:System.Int32" />. Количество миллисекунд до истечения срока действия записи или чтения. По умолчанию установлено значение 300 000 миллисекунд (5 минут).</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.ServerCertificateValidationCallback">
-      <summary>Gets or sets a callback method to validate the server certificate.</summary>
-      <returns>Returns <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" />.A callback method to validate the server certificate.</returns>
+      <summary>Возвращает или задает метод обратного вызова для проверки сертификата сервера.</summary>
+      <returns>Возвращает <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" />.Метод обратного вызова для проверки сертификата сервера.</returns>
     </member>
     <member name="P:System.Net.Http.WebRequestHandler.UnsafeAuthenticatedConnectionSharing">
-      <summary>Gets or sets a value that indicates whether to allow high-speed NTLM-authenticated connection sharing.</summary>
-      <returns>Returns <see cref="T:System.Boolean" />.true to keep the authenticated connection open; otherwise, false.</returns>
+      <summary>Возвращает или задает значение, указывающее, будет ли разрешено совместное использование высокоскоростного подключения с проверкой подлинности NTLM.</summary>
+      <returns>Возвращает <see cref="T:System.Boolean" />. Значение true, если необходимо сохранить открытым подключение, прошедшее проверку подлинности, в противном случае — false.</returns>
     </member>
   </members>
 </doc>

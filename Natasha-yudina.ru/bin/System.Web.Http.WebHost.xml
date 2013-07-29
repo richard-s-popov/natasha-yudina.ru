@@ -5,132 +5,138 @@
   </assembly>
   <members>
     <member name="T:System.Web.Http.GlobalConfiguration">
-      <summary> Provides a global <see cref="T:System.Web.Http.HttpConfiguration" /> for ASP.NET applications. </summary>
+      <summary> Реализует глобальную <see cref="T:System.Web.Http.HttpConfiguration" /> для приложений ASP.NET. </summary>
     </member>
     <member name="P:System.Web.Http.GlobalConfiguration.Configuration"></member>
     <member name="P:System.Web.Http.GlobalConfiguration.DefaultHandler">
-      <summary> Gets the default message handler that will be called for all requests. </summary>
+      <summary> Получает обработчик сообщений по умолчанию, который будет вызываться для всех запросов. </summary>
     </member>
     <member name="T:System.Web.Http.RouteCollectionExtensions">
-      <summary> Extension methods for <see cref="T:System.Web.Routing.RouteCollection" /></summary>
+      <summary> Методы расширения для <see cref="T:System.Web.Routing.RouteCollection" />.</summary>
     </member>
     <member name="M:System.Web.Http.RouteCollectionExtensions.MapHttpRoute(System.Web.Routing.RouteCollection,System.String,System.String)">
-      <summary>Maps the specified route template.</summary>
-      <returns>A reference to the mapped route.</returns>
-      <param name="routes">A collection of routes for the application.</param>
-      <param name="name">The name of the route to map.</param>
-      <param name="routeTemplate">The route template for the route.</param>
+      <summary>Сопоставляет указанный шаблон маршрута.</summary>
+      <returns>Ссылка на сопоставленный маршрут.</returns>
+      <param name="routes">Коллекция маршрутов для приложения.</param>
+      <param name="name">Имя сопоставляемого маршрута.</param>
+      <param name="routeTemplate">Шаблон маршрута.</param>
     </member>
     <member name="M:System.Web.Http.RouteCollectionExtensions.MapHttpRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object)">
-      <summary>Maps the specified route template and sets default route.</summary>
-      <returns>A reference to the mapped route.</returns>
-      <param name="routes">A collection of routes for the application.</param>
-      <param name="name">The name of the route to map.</param>
-      <param name="routeTemplate">The route template for the route.</param>
-      <param name="defaults">An object that contains default route values.</param>
+      <summary>Сопоставляет заданный шаблон маршрута, задает маршрут по умолчанию.</summary>
+      <returns>Ссылка на сопоставленный маршрут.</returns>
+      <param name="routes">Коллекция маршрутов для приложения.</param>
+      <param name="name">Имя сопоставляемого маршрута.</param>
+      <param name="routeTemplate">Шаблон маршрута.</param>
+      <param name="defaults">Объект, содержащий значения маршрута по умолчанию.</param>
     </member>
     <member name="M:System.Web.Http.RouteCollectionExtensions.MapHttpRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.Object)">
-      <summary>Maps the specified route template and sets default route values and constraints.</summary>
-      <returns>A reference to the mapped route.</returns>
-      <param name="routes">A collection of routes for the application.</param>
-      <param name="name">The name of the route to map.</param>
-      <param name="routeTemplate">The route template for the route.</param>
-      <param name="defaults">An object that contains default route values.</param>
-      <param name="constraints">A set of expressions that specify values for routeTemplate.</param>
+      <summary>Сопоставляет заданный шаблон маршрута, задает значения маршрута по умолчанию и ограничения.</summary>
+      <returns>Ссылка на сопоставленный маршрут.</returns>
+      <param name="routes">Коллекция маршрутов для приложения.</param>
+      <param name="name">Имя сопоставляемого маршрута.</param>
+      <param name="routeTemplate">Шаблон маршрута.</param>
+      <param name="defaults">Объект, содержащий значения маршрута по умолчанию.</param>
+      <param name="constraints">Набор выражений, задающих значения для routeTemplate.</param>
     </member>
     <member name="M:System.Web.Http.RouteCollectionExtensions.MapHttpRoute(System.Web.Routing.RouteCollection,System.String,System.String,System.Object,System.Object,System.Net.Http.HttpMessageHandler)">
-      <summary>Maps the specified route template and sets default route values, constraints,  and end-point message handler.</summary>
-      <returns>A reference to the mapped route.</returns>
-      <param name="routes">A collection of routes for the application.</param>
-      <param name="name">The name of the route to map.</param>
-      <param name="routeTemplate">The route template for the route.</param>
-      <param name="defaults">An object that contains default route values.</param>
-      <param name="constraints">A set of expressions that specify values for routeTemplate.</param>
-      <param name="handler">The handler to which the request will be dispatched.</param>
+      <summary>Сопоставляет заданный шаблон маршрута и задает значения маршрута по умолчанию, ограничения и обработчик сообщений конечных точек.</summary>
+      <returns>Ссылка на сопоставленный маршрут.</returns>
+      <param name="routes">Коллекция маршрутов для приложения.</param>
+      <param name="name">Имя сопоставляемого маршрута.</param>
+      <param name="routeTemplate">Шаблон маршрута.</param>
+      <param name="defaults">Объект, содержащий значения маршрута по умолчанию.</param>
+      <param name="constraints">Набор выражений, задающих значения для routeTemplate.</param>
+      <param name="handler">Обработчик, которому будет отправлено сообщение.</param>
     </member>
     <member name="T:System.Web.Http.WebHost.HttpControllerHandler">
-      <summary> A <see cref="T:System.Web.IHttpAsyncHandler" /> that passes ASP.NET requests into the <see cref="T:System.Web.Http.HttpServer" /> pipeline and write the result back. </summary>
+      <summary>
+        <see cref="T:System.Web.IHttpAsyncHandler" />, который передает запросы ASP.NET в конвейер <see cref="T:System.Web.Http.HttpServer" /> и пишет результат обратно. </summary>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.#ctor(System.Web.Routing.RouteData)">
-      <summary> Initializes a new instance of the <see cref="T:System.Web.Http.WebHost.HttpControllerHandler" /> class. </summary>
-      <param name="routeData">The route data.</param>
+      <summary> Инициализирует новый экземпляр класса <see cref="T:System.Web.Http.WebHost.HttpControllerHandler" />. </summary>
+      <param name="routeData">Данные маршрута.</param>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.BeginProcessRequest(System.Web.HttpContextBase,System.AsyncCallback,System.Object)">
-      <summary> Begins the process request. </summary>
-      <returns>An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process. </returns>
-      <param name="httpContextBase">The HTTP context base.</param>
-      <param name="callback">The callback.</param>
-      <param name="state">The state.</param>
+      <summary> Начинает запрос процесса. </summary>
+      <returns>
+        <see cref="T:System.IAsyncResult" />, который содержит сведения о состоянии процесса. </returns>
+      <param name="httpContextBase">Базовый контекст HTTP.</param>
+      <param name="callback">Обратный вызов.</param>
+      <param name="state">Состояние.</param>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.EndProcessRequest(System.IAsyncResult)">
-      <summary> Provides an asynchronous process End method when the process ends. </summary>
-      <param name="result">An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</param>
+      <summary> Предоставляет асинхронный метод End для окончания процесса. </summary>
+      <param name="result">
+        <see cref="T:System.IAsyncResult" />, который содержит сведения о состоянии процесса.</param>
     </member>
     <member name="P:System.Web.Http.WebHost.HttpControllerHandler.IsReusable">
-      <summary> Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler" /> instance. </summary>
+      <summary> Получает значение, указывающее, может ли другой запрос использовать экземпляр <see cref="T:System.Web.IHttpHandler" />. </summary>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.ProcessRequest(System.Web.HttpContextBase)">
-      <summary> Processes the request. </summary>
-      <param name="httpContextBase">The HTTP context base.</param>
+      <summary> Обрабатывает запрос. </summary>
+      <param name="httpContextBase">Базовый контекст HTTP.</param>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.System#Web#IHttpAsyncHandler#BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)">
-      <summary> Begins processing the request. </summary>
-      <returns>An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process. </returns>
-      <param name="httpContext">The HTTP context.</param>
-      <param name="callback">The callback.</param>
-      <param name="state">The state.</param>
+      <summary> Начинает обработку запроса. </summary>
+      <returns>
+        <see cref="T:System.IAsyncResult" />, который содержит сведения о состоянии процесса. </returns>
+      <param name="httpContext">Контекст HTTP.</param>
+      <param name="callback">Обратный вызов.</param>
+      <param name="state">Состояние.</param>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.System#Web#IHttpAsyncHandler#EndProcessRequest(System.IAsyncResult)">
-      <summary> Provides an asynchronous process End method when the process ends. </summary>
-      <param name="result">An <see cref="T:System.IAsyncResult" /> that contains information about the status of the process.</param>
+      <summary> Предоставляет асинхронный метод End для окончания процесса. </summary>
+      <param name="result">
+        <see cref="T:System.IAsyncResult" />, который содержит сведения о состоянии процесса.</param>
     </member>
     <member name="P:System.Web.Http.WebHost.HttpControllerHandler.System#Web#IHttpHandler#IsReusable">
-      <summary> Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler" /> instance. </summary>
+      <summary> Получает значение, указывающее, может ли другой запрос использовать экземпляр <see cref="T:System.Web.IHttpHandler" />. </summary>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerHandler.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)">
-      <summary> Processes the request. </summary>
-      <param name="httpContext">The HTTP context base.</param>
+      <summary> Обрабатывает запрос. </summary>
+      <param name="httpContext">Базовый контекст HTTP.</param>
     </member>
     <member name="T:System.Web.Http.WebHost.HttpControllerRouteHandler">
-      <summary> A <see cref="T:System.Web.Routing.IRouteHandler" /> that returns instances of <see cref="T:System.Web.Http.WebHost.HttpControllerHandler" /> that can pass requests to a given <see cref="T:System.Web.Http.HttpServer" /> instance. </summary>
+      <summary>
+        <see cref="T:System.Web.Routing.IRouteHandler" />, который возвращает экземпляры <see cref="T:System.Web.Http.WebHost.HttpControllerHandler" />, которые могут передавать запросы данному экземпляру <see cref="T:System.Web.Http.HttpServer" />. </summary>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerRouteHandler.#ctor">
-      <summary> Initializes a new instance of the <see cref="T:System.Web.Http.WebHost.HttpControllerRouteHandler" /> class. </summary>
+      <summary> Инициализирует новый экземпляр класса <see cref="T:System.Web.Http.WebHost.HttpControllerRouteHandler" />. </summary>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerRouteHandler.GetHttpHandler(System.Web.Routing.RequestContext)">
-      <summary> Provides the object that processes the request. </summary>
-      <returns> An object that processes the request. </returns>
-      <param name="requestContext">An object that encapsulates information about the request.</param>
+      <summary> Предоставляет объект, который обрабатывает запрос. </summary>
+      <returns> Объект, который обрабатывает запрос. </returns>
+      <param name="requestContext">Объект, инкапсулирующий сведения о запросе.</param>
     </member>
     <member name="P:System.Web.Http.WebHost.HttpControllerRouteHandler.Instance">
-      <summary> Gets the singleton <see cref="T:System.Web.Http.WebHost.HttpControllerRouteHandler" /> instance. </summary>
+      <summary> Получает экземпляр-синглтон <see cref="T:System.Web.Http.WebHost.HttpControllerRouteHandler" />. </summary>
     </member>
     <member name="M:System.Web.Http.WebHost.HttpControllerRouteHandler.System#Web#Routing#IRouteHandler#GetHttpHandler(System.Web.Routing.RequestContext)">
-      <summary> Provides the object that processes the request. </summary>
-      <returns> An object that processes the request. </returns>
-      <param name="requestContext">An object that encapsulates information about the request.</param>
+      <summary> Предоставляет объект, который обрабатывает запрос. </summary>
+      <returns> Объект, который обрабатывает запрос. </returns>
+      <param name="requestContext">Объект, инкапсулирующий сведения о запросе.</param>
     </member>
     <member name="T:System.Web.Http.WebHost.PreApplicationStartCode">
-      <summary>Provides a registration point for the simple membership pre-application start code.</summary>
+      <summary>Предоставляет точку регистрации для предварительного кода запуска простого членства.</summary>
     </member>
     <member name="M:System.Web.Http.WebHost.PreApplicationStartCode.Start">
-      <summary>Registers the simple membership pre-application start code.</summary>
+      <summary>Регистрирует предварительный код запуска простого членства.</summary>
     </member>
     <member name="T:System.Web.Http.WebHost.WebHostBufferPolicySelector">
-      <summary>Represents the web host buffer policy selector.</summary>
+      <summary>Представляет селектор политик буфера веб-узла.</summary>
     </member>
     <member name="M:System.Web.Http.WebHost.WebHostBufferPolicySelector.#ctor">
-      <summary>Initializes a new instance of the <see cref="T:System.Web.Http.WebHost.WebHostBufferPolicySelector" /> class.</summary>
+      <summary>Инициализирует новый экземпляр класса <see cref="T:System.Web.Http.WebHost.WebHostBufferPolicySelector" />.</summary>
     </member>
     <member name="M:System.Web.Http.WebHost.WebHostBufferPolicySelector.UseBufferedInputStream(System.Object)">
-      <summary>Gets a value that indicates whether the host should buffer the entity body of the HTTP request.</summary>
-      <returns>true if buffering should be used; otherwise a streamed request should be used.</returns>
-      <param name="hostContext">The host context.</param>
+      <summary>Получает значение, указывающее, должен ли узел буферизовать тело объекта запроса HTTP.</summary>
+      <returns>Значение true, если буферизация должна использоваться; в противном случае следует использовать потоковый запрос.</returns>
+      <param name="hostContext">Контекст узла.</param>
     </member>
     <member name="M:System.Web.Http.WebHost.WebHostBufferPolicySelector.UseBufferedOutputStream(System.Net.Http.HttpResponseMessage)">
-      <summary>Uses a buffered output stream for the web host.</summary>
-      <returns>A buffered output stream.</returns>
-      <param name="response">The response.</param>
+      <summary>Использует для веб-узла выходной поток с буферизацией.</summary>
+      <returns>Буферизованный выходной поток.</returns>
+      <param name="response">Ответ.</param>
     </member>
   </members>
 </doc>

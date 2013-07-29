@@ -104,5 +104,23 @@ namespace Resources {
                 return ResourceManager.GetString("Home", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как 2013 | Новый проект.
+        /// </summary>
+        internal static string Project1_Name {
+            get {
+                return ResourceManager.GetString("Project1_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как 18+Постельные сцены.
+        /// </summary>
+        internal static string Project2_Name {
+            get {
+                return ResourceManager.GetString("Project2_Name", resourceCulture);
+            }
+        }
     }
 }
