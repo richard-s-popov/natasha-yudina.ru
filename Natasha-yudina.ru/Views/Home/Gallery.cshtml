@@ -119,40 +119,42 @@
 </div>
 
 <div class="right-panel">
-    <div class="small-item">
+    <a href="#project1" class="small-item">
         <div class="img" style="background: url(/Content/img/gallery/1_1_small.jpg) no-repeat center center;"></div>
         <div class="name">
-            <a href="#project1">@Resources.Resources.Project1_Name</a>
+            <p>@Resources.Resources.Project1_Name</p>
         </div>
-    </div>
-    <div class="small-item">
+    </a>
+    <a href="#project2" class="small-item">
         <div class="img" style="background: url(/Content/img/gallery/2_1_small.jpg) no-repeat center center;"></div>
         <div class="name">
-            <a href="#project2">@Resources.Resources.Project2_Name</a>
+            <p>@Resources.Resources.Project2_Name</p>
         </div>
-    </div>
-    <div class="small-item">
+    </a>
+    <a href="#project3" class="small-item">
         <div class="img" style="background: url(/Content/img/gallery/3_1_small.jpg) no-repeat center center;"></div>
         <div class="name">
-            <a href="#project3">@Resources.Resources.Project3_Name</a>
+            <p>@Resources.Resources.Project3_Name</p>
         </div>
-    </div>
-    <div class="small-item">
+    </a>
+    <a href="#project4" class="small-item">
         <div class="img" style="background: url(/Content/img/gallery/4_11_middle.jpg) no-repeat center center;"></div>
         <div class="name">
-            <a href="#project4">@Resources.Resources.Project4_Name</a>
+            <p>@Resources.Resources.Project4_Name</p>
         </div>
-    </div>
-    <div class="small-item">
+    </a>
+    <a href="#project5" class="small-item">
         <div class="img" style="background: url(/Content/img/gallery/5_1_middle.jpg) no-repeat center right;"></div>
         <div class="name">
-            <a href="#project5">@Resources.Resources.Project5_Name</a>
+            <p>@Resources.Resources.Project5_Name</p>
         </div>
-    </div>
+    </a>
 </div>
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('.carousel').scrollingCarousel();
+		$('.carousel').scrollingCarousel({
+		    looped: true
+		});
 	});
 </script>

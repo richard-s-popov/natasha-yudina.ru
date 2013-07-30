@@ -112,7 +112,7 @@ textarea {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
     cursor: pointer;
-    transition: all 0.2s ease;
+    /*transition: all 0.2s ease;*/
 }
 
 .pano .row .pano-element:hover {
@@ -197,6 +197,8 @@ textarea {
 .right-panel .small-item {
     height: 70px;
     margin-top: 0;
+    display: block;
+    text-decoration: none;
 }
 
 .right-panel .small-item .img {
@@ -212,7 +214,7 @@ textarea {
     vertical-align: top;
 }
 
-.right-panel .small-item .name a {
+.right-panel .small-item .name p {
     vertical-align: middle;
     margin-top: 29px;
     margin-left: 10px;
@@ -222,6 +224,6 @@ textarea {
     display: inline-block;
 }
 
-.right-panel .small-item .name a:hover {
+.right-panel .small-item:hover .name p {
     color: black;
 }
