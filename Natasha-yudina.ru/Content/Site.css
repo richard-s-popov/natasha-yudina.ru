@@ -94,7 +94,8 @@ textarea {
 }
 
 .header-content .main-menu span a:hover {
-    color: rgb(122, 185, 214);
+    /*color: rgb(122, 185, 214);*/
+    color: black;
 }
 
 .pano {
@@ -222,5 +223,5 @@ textarea {
 }
 
 .right-panel .small-item .name a:hover {
-    color: rgb(122, 185, 214);
+    color: black;
 }

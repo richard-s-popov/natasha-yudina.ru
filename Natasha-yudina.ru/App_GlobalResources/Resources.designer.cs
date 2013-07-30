@@ -140,5 +140,14 @@ namespace Resources {
                 return ResourceManager.GetString("Project4_Name", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как Искусство в горох.
+        /// </summary>
+        internal static string Project5_Name {
+            get {
+                return ResourceManager.GetString("Project5_Name", resourceCulture);
+            }
+        }
     }
 }
