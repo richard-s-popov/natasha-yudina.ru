@@ -122,5 +122,23 @@ namespace Resources {
                 return ResourceManager.GetString("Project2_Name", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как Кукольная антропология.
+        /// </summary>
+        internal static string Project3_Name {
+            get {
+                return ResourceManager.GetString("Project3_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как Игрушки.
+        /// </summary>
+        internal static string Project4_Name {
+            get {
+                return ResourceManager.GetString("Project4_Name", resourceCulture);
+            }
+        }
     }
 }

@@ -147,7 +147,7 @@ textarea {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
     cursor: pointer;
-    transition: all 0.2s ease;
+    /*transition: all 0.2s ease;*/
 }
 
 .carousel li:hover {
@@ -158,6 +158,7 @@ textarea {
 .left-panel {
     display: inline-block;
     width: 70%;
+    padding-bottom: 400px;
 }
 
 .left-panel .item {
@@ -167,7 +168,7 @@ textarea {
 .left-panel .item .big-view {
     display: inline-block;
     width: 350px;
-    height: 285px;
+    margin-bottom: 20px;
 }
 
 .left-panel .item .big-view img {
