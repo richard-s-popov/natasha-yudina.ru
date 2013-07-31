@@ -75,6 +75,7 @@ textarea {
     background-image: url(../Content/img/logo.png);
     width: 400px;
     height: 77px;
+    top: 20px;
 }
 
 .header-content .main-menu {
