@@ -15,8 +15,8 @@ namespace Natasha_yudina.ru
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{project}/{id}",
+                defaults: new { controller = "Home", action = "Index", project = UrlParameter.Optional, id = UrlParameter.Optional }
             );
         }
     }

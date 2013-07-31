@@ -3,4 +3,107 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Events</h2>
+<script type="text/javascript" src="@Url.Content("~/Scripts/scrollingcarousel.2.0.min.js")"></script>
+
+<div class="left-panel">
+    <div id="event1" class="item">
+        <hr/>
+        <h2>@Resources.Resources.Event1_Name</h2>
+        <div>
+            <div class="big-view">
+                <a href="@Url.Content("~/Content/img/events/1_1.jpg")" data-lightbox="event1" title="«18+».Экспозиция выставки. 2012. Gridchinhall">
+                    <img src="@Url.Content("~/Content/img/events/1_1.jpg")"/>
+                </a>
+                <a href="@Url.Content("~/Content/img/events/1_2.jpg")" data-lightbox="event1" title="«18+».Экспозиция выставки. 2012. Gridchinhall"></a>
+                <a href="@Url.Content("~/Content/img/events/1_3.jpg")" data-lightbox="event1" title="Студия Gridchinhall. 2013"></a>
+                <a href="@Url.Content("~/Content/img/events/1_4.jpg")" data-lightbox="event1" title="Студия Gridchinhall. 2012"></a>
+            </div>
+            <div class="description">
+                <p><a href="http://www.gridchinhall.ru/events/natasha-yudina-18" target="_blank">«18+» в Gridchinhall</a></p>
+            </div>
+        </div>
+        <div id="carousel" class="carousel">
+            <ul>
+                <li img="1_1.jpg" style="background: url(/Content/img/events/1_1_middle.jpg) no-repeat center center;"></li>
+                <li img="1_2.jpg" style="background: url(/Content/img/events/1_2_middle.jpg) no-repeat center center;"></li>
+                <li img="1_3.jpg" style="background: url(/Content/img/events/1_3_middle.jpg) no-repeat center center;"></li>
+                <li img="1_4.jpg" style="background: url(/Content/img/events/1_4_middle.jpg) no-repeat center center;"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="event2" class="item">
+        <hr/>
+        <h2>@Resources.Resources.Event2_Name</h2>
+        <div>
+            <div class="big-view">
+                <a href="@Url.Content("~/Content/img/events/2_1.jpg")" data-lightbox="event2" title="Монтаж инсталляции Комната в горох. 2012. Международный симпозиум современного искусства Nord Art. Германия">
+                    <img src="@Url.Content("~/Content/img/events/2_1.jpg")"/>
+                </a>
+                <a href="@Url.Content("~/Content/img/events/2_2.jpg")" data-lightbox="event2" title="Комната в горох. 2012. Artmuseum project. Форум актуального искусства. Томский Областной Художественный Музей"></a>
+            </div>
+            <div class="description">
+                <p></p>
+            </div>
+        </div>
+        <div id="carousel" class="carousel">
+            <ul>
+                <li img="2_1.jpg" style="background: url(/Content/img/events/2_1_middle.jpg) no-repeat center center;"></li>
+                <li img="2_2.jpg" style="background: url(/Content/img/events/2_2_middle.jpg) no-repeat center center;"></li>
+            </ul>
+        </div>
+    </div>
+    <div id="event3" class="item">
+        <hr/>
+        <h2>@Resources.Resources.Event3_Name</h2>
+        <div>
+            <div class="big-view">
+                <a href="@Url.Content("~/Content/img/events/3_1.jpg")" data-lightbox="event3" title="Порно. Экспозиция выставки. 2011. Международный симпозиум современного искусства Nord Art. Германия">
+                    <img src="@Url.Content("~/Content/img/events/3_1.jpg")"/>
+                </a>
+            </div>
+            <div class="description">
+                <p></p>
+            </div>
+        </div>
+        <div id="carousel" class="carousel">
+            <ul>
+                <li img="3_1.jpg" style="background: url(/Content/img/events/3_1_middle.jpg) no-repeat center center;"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="right-panel">
+    <a href="#event1" class="small-item">
+        <div class="img" style="background: url(/Content/img/events/1_1_middle.jpg) no-repeat center center;"></div>
+        <div class="name">
+            <p>@Resources.Resources.Event1_Name</p>
+        </div>
+    </a>
+    <a href="#event2" class="small-item">
+        <div class="img" style="background: url(/Content/img/events/2_1_middle.JPG) no-repeat center center;"></div>
+        <div class="name">
+            <p>@Resources.Resources.Event2_Name</p>
+        </div>
+    </a>
+    <a href="#event3" class="small-item">
+        <div class="img" style="background: url(/Content/img/events/3_1_middle.JPG) no-repeat center center;"></div>
+        <div class="name">
+            <p>@Resources.Resources.Event3_Name</p>
+        </div>
+    </a>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('.carousel').scrollingCarousel({
+		    looped: true
+		});
+
+	    $('.carousel li').click(function() {
+	        $(this).parent().parent().parent().find('.big-view img').attr('src', '/Content/img/events/' + $(this).attr('img'));
+	        $(this).parent().parent().parent().find('.big-view a[href="/Content/img/events/' + $(this).attr('img') + '"]').attr('href', $(this).parent().parent().parent().find('.big-view a:first').attr('href'));
+	        $(this).parent().parent().parent().find('.big-view a:first').attr('href', '/Content/img/events/' + $(this).attr('img'));
+	    });
+	});
+</script>

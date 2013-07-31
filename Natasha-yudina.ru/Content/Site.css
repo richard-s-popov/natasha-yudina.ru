@@ -78,6 +78,26 @@ textarea {
     top: 20px;
 }
 
+.header-content .fb_logo {
+    position: absolute;
+    background: url(../Content/img/fb_logo.jpg) center right;
+    width: 39px;
+    height: 40px;
+    right: 0;
+    top: 20px;
+    cursor: pointer;
+}
+
+.header-content .fb_logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content .fb_logo:hover {
+    background-position: center left;
+}
+
 .header-content .main-menu {
     float: right;
     margin-top: 80px;
@@ -114,6 +134,12 @@ textarea {
     -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
     cursor: pointer;
     /*transition: all 0.2s ease;*/
+}
+
+.pano .row .pano-element a {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .pano .row .pano-element:hover {
@@ -187,6 +213,22 @@ textarea {
 
 .left-panel .item .description p {
     margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.left-panel .item .description a {
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left-panel .item .description .full {
+    display: none;
+}
+
+.left-panel .item .description a:hover {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .right-panel {
@@ -228,4 +270,144 @@ textarea {
 
 .right-panel .small-item:hover .name p {
     color: black;
+    text-decoration: underline;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container .image-name {
+    position: absolute;
+    bottom: 10px;
+    left: 375px;
+    font-size: 10px;
+    color: #666666;
+    width: 325px;
+}
+
+.contact-container {
+    padding: 30px;
+}
+
+.contact-form .row {
+    margin-top: 5px;
+}
+
+.contact-form .row input {
+    width: 210px;
+}
+
+.contact-form .row .labels {
+    width: 100px;
+    display: inline-block;
+}
+
+.contact-form .row .labels label {
+    font-size: 14px;
+    text-align: left;
+    width: 90px;
+    padding-right: 6px;
+    color: #4e4e4e;
+    font-family: 'Lucida Sans', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+}
+
+.contact-form .row .mes {
+    width: 210px;
+}
+
+.contact-form .row .for-mes {
+    vertical-align: top;
+}
+
+.contact-form .row .button {
+    margin-left: 109px;
+    display: block;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    border: 4px solid #e4e4e4;
+    padding: 3px 5px !important;
+    border-radius: 3px; 
+    -moz-border-radius: 3px; /* Firefox */ 
+    -webkit-border-radius: 3px; /* Safari, Chrome */ 
+    -khtml-border-radius: 3px; /* KHTML */ 
+    behavior: url(ie-css3.htc);
+    outline: none;
+}
+input[type="text"], input[type="password"] {
+    height: 22px;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    border-color: #d3d3d3;
+    -moz-transition: border-color 200ms ease;
+    -webkit-transition: border-color 200ms ease;
+    transition: border-color 200ms ease;
+}
+
+.button a {
+    text-decoration: none !important;
+}
+
+.button input { /* Standard black button */
+	font-size: 14px;
+	/*font-family: 'lucida sans',arial,helvetica,sans-serif;*/
+	line-height: 18px;
+	color: #fff !important;
+		
+	text-decoration: none;
+		
+	padding: 5px 14px 6px 13px;
+	display: block;
+	width: auto;
+	position: relative;
+	z-index: 2;
+   
+	border: none;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	
+	background: #313131; /* Old browsers */
+	background: -moz-linear-gradient(top, #313131 0%, #222222 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #313131 0%,#222222 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #313131 0%,#222222 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #313131 0%,#222222 100%); /* IE10+ */
+	background: linear-gradient(top, #313131 0%,#222222 100%); /* W3C */
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+}
+
+.button a:hover,
+.button input:hover,
+.button button:hover,
+.button a:focus,
+.button input:focus,
+.button button:focus
+{
+	background: #464646; /* Old browsers */
+	background: -moz-linear-gradient(top, #464646 0%, #393939 100%); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, #464646 0%,#393939 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #464646 0%,#393939 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #464646 0%,#393939 100%); /* IE10+ */
+	background: linear-gradient(top, #464646 0%,#393939 100%); /* W3C */
+}
+
+.button .large {
+    width: 230px;
+    margin-left: 4px;
+    padding: 12px;
+    font: 400 18px 'Lucida Sans', 'Lucida Grande', Arial, Helvetica, sans-serif;
+}
+
+.button a:focus, 
+.button input:focus, 
+.button a:active, 
+.button input:active {
+     -webkit-box-shadow:0 0 5px 2px #aaa; 
+     -moz-box-shadow:0 0 5px 2px #aaa; 
+     box-shadow:0 0 5px 2px #aaa;
 }

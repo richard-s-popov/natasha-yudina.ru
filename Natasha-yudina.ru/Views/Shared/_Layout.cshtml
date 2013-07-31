@@ -15,10 +15,13 @@
         <div class="main">
             <div class="header-content">
                 <div class="logo"></div>
+                <div class="fb_logo">
+                    <a href="https://www.facebook.com/natasha.yudina.75" target="_blank"></a>
+                </div>
                 <div class="main-menu">
                     <span><a href="@Url.Action("Index", "Home")">@Resources.Resources.Home</a></span>
                     <span><a href="@Url.Action("Gallery", "Home")">@Resources.Resources.Gallery</a></span>
-                    <span><a href="@Url.Action("Biography", "Home")">@Resources.Resources.Biography</a></span>
+                    <span><a href="#">@Resources.Resources.Biography</a></span>
                     <span><a href="@Url.Action("Events", "Home")">@Resources.Resources.Events</a></span>
                     <span><a href="@Url.Action("Contacts", "Home")">@Resources.Resources.Contacts</a></span>
                     <span><a href="@Url.Action("ChangeCulture", "Home", new { lang = "ru", returnUrl = this.Request.RawUrl })">ru</a>&nbsp;/&nbsp;<a href="@Url.Action("ChangeCulture", "Home", new { lang = "en", returnUrl = this.Request.RawUrl })">en</a></span>

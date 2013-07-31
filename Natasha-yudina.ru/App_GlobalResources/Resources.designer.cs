@@ -79,6 +79,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, такую же, как Студия GridchinHall.
+        /// </summary>
+        internal static string Event1_Name {
+            get {
+                return ResourceManager.GetString("Event1_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как Комната в горох.
+        /// </summary>
+        internal static string Event2_Name {
+            get {
+                return ResourceManager.GetString("Event2_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как Nord Art.
+        /// </summary>
+        internal static string Event3_Name {
+            get {
+                return ResourceManager.GetString("Event3_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, такую же, как События.
         /// </summary>
         internal static string Events {

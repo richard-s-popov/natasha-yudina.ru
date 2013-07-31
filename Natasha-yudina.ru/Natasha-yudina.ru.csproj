@@ -144,9 +144,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\img\events\1_1.jpg" />
+    <Content Include="Content\img\events\1_1_middle.jpg" />
+    <Content Include="Content\img\events\1_2.jpg" />
+    <Content Include="Content\img\events\1_2_middle.jpg" />
+    <Content Include="Content\img\events\1_3.jpg" />
+    <Content Include="Content\img\events\1_3_middle.jpg" />
+    <Content Include="Content\img\events\1_4.jpg" />
+    <Content Include="Content\img\events\1_4_middle.jpg" />
+    <Content Include="Content\img\events\2_1.JPG" />
+    <Content Include="Content\img\events\2_1_middle.JPG" />
+    <Content Include="Content\img\events\2_2.JPG" />
+    <Content Include="Content\img\events\2_2_middle.JPG" />
+    <Content Include="Content\img\events\3_1.JPG" />
+    <Content Include="Content\img\events\3_1_middle.JPG" />
+    <Content Include="Content\img\fb_logo.jpg" />
     <Content Include="Content\img\gallery\1_1.jpg" />
     <Content Include="Content\img\gallery\1_1_middle.jpg" />
     <Content Include="Content\img\gallery\1_1_small.jpg" />
@@ -158,6 +174,7 @@
     <Content Include="Content\img\gallery\2_12.JPG" />
     <Content Include="Content\img\gallery\2_12_middle.JPG" />
     <Content Include="Content\img\gallery\2_1_middle.jpg" />
+    <Content Include="Content\img\gallery\2_1_small.jpg" />
     <Content Include="Content\img\gallery\2_2.jpg" />
     <Content Include="Content\img\gallery\2_2_middle.jpg" />
     <Content Include="Content\img\gallery\2_3.jpg" />
@@ -174,6 +191,47 @@
     <Content Include="Content\img\gallery\2_8_middle.JPG" />
     <Content Include="Content\img\gallery\2_9.JPG" />
     <Content Include="Content\img\gallery\2_9_middle.JPG" />
+    <Content Include="Content\img\gallery\3_1.jpg" />
+    <Content Include="Content\img\gallery\3_1_middle.jpg" />
+    <Content Include="Content\img\gallery\3_1_small.jpg" />
+    <Content Include="Content\img\gallery\3_2.jpg" />
+    <Content Include="Content\img\gallery\3_2_middle.jpg" />
+    <Content Include="Content\img\gallery\3_3.jpg" />
+    <Content Include="Content\img\gallery\3_3_middle.jpg" />
+    <Content Include="Content\img\gallery\4_11.jpg" />
+    <Content Include="Content\img\gallery\4_110.jpg" />
+    <Content Include="Content\img\gallery\4_110_middle.jpg" />
+    <Content Include="Content\img\gallery\4_111.jpg" />
+    <Content Include="Content\img\gallery\4_111_middle.jpg" />
+    <Content Include="Content\img\gallery\4_112.jpg" />
+    <Content Include="Content\img\gallery\4_112_middle.jpg" />
+    <Content Include="Content\img\gallery\4_113.jpg" />
+    <Content Include="Content\img\gallery\4_113_middle.jpg" />
+    <Content Include="Content\img\gallery\4_11_middle.jpg" />
+    <Content Include="Content\img\gallery\4_22.jpg" />
+    <Content Include="Content\img\gallery\4_22_middle.jpg" />
+    <Content Include="Content\img\gallery\4_33.jpg" />
+    <Content Include="Content\img\gallery\4_33_middle.jpg" />
+    <Content Include="Content\img\gallery\4_44.jpg" />
+    <Content Include="Content\img\gallery\4_44_middle.jpg" />
+    <Content Include="Content\img\gallery\4_55.jpg" />
+    <Content Include="Content\img\gallery\4_55_middle.jpg" />
+    <Content Include="Content\img\gallery\4_66.jpg" />
+    <Content Include="Content\img\gallery\4_66_middle.jpg" />
+    <Content Include="Content\img\gallery\4_77.jpg" />
+    <Content Include="Content\img\gallery\4_77_middle.jpg" />
+    <Content Include="Content\img\gallery\4_88.jpg" />
+    <Content Include="Content\img\gallery\4_88_middle.jpg" />
+    <Content Include="Content\img\gallery\4_99.jpg" />
+    <Content Include="Content\img\gallery\4_99_middle.jpg" />
+    <Content Include="Content\img\gallery\5_1.jpg" />
+    <Content Include="Content\img\gallery\5_1_middle.jpg" />
+    <Content Include="Content\img\gallery\5_2.jpg" />
+    <Content Include="Content\img\gallery\5_2_middle.jpg" />
+    <Content Include="Content\img\gallery\5_3.jpg" />
+    <Content Include="Content\img\gallery\5_3_middle.jpg" />
+    <Content Include="Content\img\gallery\5_4.JPG" />
+    <Content Include="Content\img\gallery\5_4_middle.JPG" />
     <Content Include="Content\img\home_pano\10_5.jpg" />
     <Content Include="Content\img\home_pano\11_1.jpg" />
     <Content Include="Content\img\home_pano\12_7.jpg" />
@@ -200,6 +258,29 @@
     <Content Include="Content\img\home_pano\9_11.jpg" />
     <Content Include="Content\img\home_pano\панно.jpg" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\lightbox2.6\lightbox\css\lightbox.css" />
+    <Content Include="Content\lightbox2.6\lightbox\css\screen.css" />
+    <Content Include="Content\lightbox2.6\lightbox\img\close.png" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\donate.png" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\favicon.ico" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\image-1.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\image-2.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\image-3.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\image-4.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\image-5.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\image-6.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\thumb-1.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\thumb-2.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\thumb-3.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\thumb-4.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\thumb-5.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\demopage\thumb-6.jpg" />
+    <Content Include="Content\lightbox2.6\lightbox\img\loading.gif" />
+    <Content Include="Content\lightbox2.6\lightbox\img\next.png" />
+    <Content Include="Content\lightbox2.6\lightbox\img\prev.png" />
+    <Content Include="Content\lightbox2.6\lightbox\js\jquery-1.10.2.min.js" />
+    <Content Include="Content\lightbox2.6\lightbox\js\lightbox-2.6.min.js" />
+    <Content Include="Content\lightbox2.6\lightbox\js\modernizr.custom.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -295,10 +376,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
+    <Content Include="Views\Home\Events.cshtml" />
+    <Content Include="Views\Home\Contacts.cshtml" />
+    <Content Include="Views\Home\ContactFormFinish.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
