@@ -37,3 +37,28 @@
         <td class="pano-element" style="background: url(/Content/img/home_pano/24_6.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 6 })"></a></td>
     </tr>
 </table>
+
+@if (ViewBag.NoPromo)
+{
+    <div class="promo" style="display: none;"></div>
+}
+else
+{
+    <div class="promo"></div>
+}
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        setTimeout(function() {
+            $('.promo').animate({
+                opacity: 0,
+            }, 1000, function () {
+                
+            });
+        }, 2000);
+        setTimeout(function () {
+            $('.promo').hide();
+        }, 4000);
+    });
+</script>

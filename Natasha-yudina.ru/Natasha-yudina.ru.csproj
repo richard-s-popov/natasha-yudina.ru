@@ -258,6 +258,7 @@
     <Content Include="Content\img\home_pano\9_11.jpg" />
     <Content Include="Content\img\home_pano\панно.jpg" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\promo.jpg" />
     <Content Include="Content\lightbox2.6\lightbox\css\lightbox.css" />
     <Content Include="Content\lightbox2.6\lightbox\css\screen.css" />
     <Content Include="Content\lightbox2.6\lightbox\img\close.png" />

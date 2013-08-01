@@ -15,8 +15,17 @@ namespace Natasha_yudina.ru.Controllers
         //
         // GET: /Home/
 
-        public ActionResult Index()
+        public ActionResult Index(bool? nopromo)
         {
+            if (nopromo != null && nopromo.Value)
+            {
+                ViewBag.NoPromo = true;
+            }
+            else
+            {
+                ViewBag.NoPromo = false;
+            }
+
             return View();
         }
 
