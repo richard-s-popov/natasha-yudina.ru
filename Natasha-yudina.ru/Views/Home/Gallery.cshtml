@@ -168,13 +168,16 @@
         <hr/>
         <h2>@Resources.Resources.Project5_Name</h2>
         <div class="image-container">
-            <div class="big-view">
+            <div class="big-view images">
                 <a href="@Url.Content("~/Content/img/gallery/5_1.jpg")" data-lightbox="project5"title="Комната в горох. Инсталляция. 2008. Сессия молодого искусства Переучёт. С.-Петербург">
                     <img src="@Url.Content("~/Content/img/gallery/5_1.jpg")"/>
                 </a>
                 <a href="@Url.Content("~/Content/img/gallery/5_2.jpg")" data-lightbox="project5" title="Картина в горох. 2012. Холст, масло, багет. 40х30"></a>
                 <a href="@Url.Content("~/Content/img/gallery/5_3.jpg")" data-lightbox="project5" title="Комната в горох. Инсталляция. 2011. Международный симпозиум современного искусства Nord Art. Германия"></a>
                 <a href="@Url.Content("~/Content/img/gallery/5_4.jpg")" data-lightbox="project5" title="Комната в горох. Фрагмент инсталляции. 2011. Международный симпозиум современного искусства Nord Art. Германия"></a>
+            </div>
+            <div class="big-view video" style="display: none;">
+                <iframe width="350" height="230" src="http://www.youtube.com/embed/KgFXKDE8Kp0" frameborder="0" allowfullscreen rel="0"></iframe>
             </div>
             <div class="description">
                 <p>
@@ -190,6 +193,7 @@
                 <li img="5_2.jpg" style="background: url(/Content/img/gallery/5_2_middle.jpg) no-repeat center center;"></li>
                 <li img="5_3.jpg" style="background: url(/Content/img/gallery/5_3_middle.jpg) no-repeat center center;"></li>
                 <li img="5_4.jpg" style="background: url(/Content/img/gallery/5_4_middle.JPG) no-repeat center center;"></li>
+                <li img="video" style="background: url(/Content/img/gallery/video.png) no-repeat center center;"></li>
             </ul>
         </div>
     </div>
@@ -236,7 +240,17 @@
 		    looped: true
 		});
 
-	    $('.carousel li').click(function() {
+		$('.carousel li').click(function () {
+		    if ($(this).attr('img') == 'video') {
+		        $(this).parent().parent().parent().find('.big-view.images').hide();
+		        $(this).parent().parent().parent().find('.big-view.video').show();
+		        return;
+		    } else {
+		        $(this).parent().parent().parent().find('.big-view.images').show();
+		        $(this).parent().parent().parent().find('.big-view.video').hide();
+		        $(this).parent().parent().parent().find('.big-view.video').html('<iframe width="350" height="230" src="http://www.youtube.com/embed/KgFXKDE8Kp0" frameborder="0" allowfullscreen rel="0"></iframe>');
+		    }
+
 	        $(this).parent().parent().parent().find('.big-view img').attr('src', '/Content/img/gallery/' + $(this).attr('img'));
 
 	        var title = $(this).parent().parent().parent().find('.big-view a[href="/Content/img/gallery/' + $(this).attr('img') + '"]').attr('title');
