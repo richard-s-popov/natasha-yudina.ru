@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<script type="text/javascript" src="@Url.Content("~/Scripts/scrollingcarousel.2.0.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/scrollingcarousel.2.0.js")"></script>
 
 <div class="left-panel">
     <div id="project1" class="item">
@@ -52,11 +52,13 @@
             </div>
             <div class="description">
                 <div class="short">
-                    <p>Моя постель, мое ложе, мое спальное место, располагается в прилегающей части студии Gridchinhall на втором этаже, наверное, здесь уместней написать "жилой" зоны Gridchinhall. <br />Моя постель - выкрашенный в белый цвет, деревянный каркас дивана с белыми подушками, периной и выдвижными ящиками для белья - в духе интерьеров из фильмов Jean-Pierre Jeunet & Marc Caro. Должна признать, что диван - невероятно милый, уютный и интимный. Интимный, поскольку не предполагает для сна второй персоны, тоже что "личный", потому приятен для уединенного, созерцательно отдыха, встреч с Морфеем и просмотра сновидений...</p>
+                    <p>«Дети до 16-ти лет не допускаются» – можно было прочесть на киноафишах в недавнем прошлом. Cкорее всего это означало, что фильм содержал, как их тогда называли, «постельные сцены». Разумеется, к фильмам с этим грифом проявлялся повышенный интерес как со стороны тех, кому уже исполнилось шестнадцать, так и со стороны младшей аудитории, даже если сцены были вполне невинными...</p>
                     <a class="show-all">Читать далее</a>
                     <p class="image-name">Слияние двух лун / Two Moon Junction. 2012. Холст, масло. 180х140</p>
                 </div>
                 <p class="full">
+                    «Дети до 16-ти лет не допускаются» – можно было прочесть на киноафишах в недавнем прошлом. Cкорее всего это означало, что фильм содержал, как их тогда называли, «постельные сцены». Разумеется, к фильмам с этим грифом проявлялся повышенный интерес как со стороны тех, кому уже исполнилось шестнадцать, так и со стороны младшей аудитории, даже если сцены были вполне невинными.<br/>
+                    Моя постель, мое ложе, мое спальное место, располагается в прилегающей части студии Gridchinhall на втором этаже, наверное, здесь уместней написать "жилой" зоны Gridchinhall. <br />Моя постель - выкрашенный в белый цвет, деревянный каркас дивана с белыми подушками, периной и выдвижными ящиками для белья - в духе интерьеров из фильмов Jean-Pierre Jeunet & Marc Caro. Должна признать, что диван - невероятно милый, уютный и интимный. Интимный, поскольку не предполагает для сна второй персоны, тоже что "личный", потому приятен для уединенного, созерцательно отдыха, встреч с Морфеем и просмотра сновидений...<br/>
                     Почему столько внимания постели? Потому что сегодня и сейчас постель - предмет предмет моего художественного интереса здесь, в Gridchinhall. Постель, поскольку, мой родной дом не очень разнообразен в плане интерьера, постель - просто я крайне мало видела мир, постель - потому что, она всегда на глазах и, как море у Айвозовского, переменчива... По сути, созерцание собственной постели сродни медитации и трепету перед природной стихией. Я могу часами рассматривать свою постель каждое утро, наблюдать, как луч света, что падает в окно, сперва, словно солнечный блик, на вершине вздыбленного, скомканного в красивую вспененую волну, одеяла, затем медленно разрастается в полоску яркого пастозного света, затем, также медленно, ползёт ближе к подушке - кучной и пышной, подобно валуну у берега в морской воде. Апофеоз природного явления наступает, когда луч света заливает большую часть одеяла и подушки - постель словно вспыхивает светом, озаряет, слепит глаза! Тень от складок на одеяле в этот момент холодная, синяя, почти прозрачная, тогда как свет - густой, пастозный и теплый... <br/>
                     В пасмурную погоду - моя постель другая. Когда солнце скрыто за плотным слоем облаков и в воздухе точно убавили свет в целях экономии, тени сглаживаются. Свет, падающий в комнату из окна - становится мягким, танственным, почти Рембрандтовским. Постель приобретает плавность форм, белый цвет простыни и пододеяльника превращается в холодный стальной, лишенный теплоты и пастозности, при этом - обволакивающий, словно туман, загадочный призрачный цвет...<br/>
                     Однажды я позабыла в моей постели белье. Когда я взглянула, вспомнила "Ледяные горы в Антарктиде" Айвозовского! Постель в тот момент выглядела, точно антарктический пейзаж: холодный белый айсберг в холодном Северо-Ледовитом океане...<br/>
@@ -194,36 +196,38 @@
 </div>
 
 <div class="right-panel">
-    <a href="#project1" class="small-item">
-        <div class="img" style="background: url(/Content/img/gallery/1_1_small.jpg) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Project1_Name</p>
-        </div>
-    </a>
-    <a href="#project2" class="small-item">
-        <div class="img" style="background: url(/Content/img/gallery/2_1_small.jpg) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Project2_Name</p>
-        </div>
-    </a>
-    <a href="#project3" class="small-item">
-        <div class="img" style="background: url(/Content/img/gallery/3_1_small.jpg) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Project3_Name</p>
-        </div>
-    </a>
-    <a href="#project4" class="small-item">
-        <div class="img" style="background: url(/Content/img/gallery/4_11_middle.jpg) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Project4_Name</p>
-        </div>
-    </a>
-    <a href="#project5" class="small-item">
-        <div class="img" style="background: url(/Content/img/gallery/5_1_middle.jpg) no-repeat center right;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Project5_Name</p>
-        </div>
-    </a>
+    <div class="right-menu">
+        <a href="#project1" class="small-item">
+            <div class="img" style="background: url(/Content/img/gallery/1_1_small.jpg) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Project1_Name</p>
+            </div>
+        </a>
+        <a href="#project2" class="small-item">
+            <div class="img" style="background: url(/Content/img/gallery/2_1_small.jpg) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Project2_Name</p>
+            </div>
+        </a>
+        <a href="#project3" class="small-item">
+            <div class="img" style="background: url(/Content/img/gallery/3_1_small.jpg) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Project3_Name</p>
+            </div>
+        </a>
+        <a href="#project4" class="small-item">
+            <div class="img" style="background: url(/Content/img/gallery/4_11_middle.jpg) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Project4_Name</p>
+            </div>
+        </a>
+        <a href="#project5" class="small-item">
+            <div class="img" style="background: url(/Content/img/gallery/5_1_middle.jpg) no-repeat center right;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Project5_Name</p>
+            </div>
+        </a>
+    </div>
 </div>
 
 <script type="text/javascript">
@@ -260,5 +264,16 @@
 
 	        $('#' + project + ' #carousel li[img*="_' + id + '.jpg"]').click();
 	    }
+	    
+	    var offset = $(".right-menu").offset();
+
+	    $(window).scroll(function () {
+	        if ($(window).scrollTop() > offset.top) {
+	            $(".right-menu").css({ 'top': '10px', 'position': 'fixed' }); /* тут можно задать отступ от верхней границы, в данном случае это 10 px */
+	        }
+	        else {
+	            $(".right-menu").css({ 'top': offset.top, 'position': 'static' });
+	        };
+	    });
 	});
 </script>

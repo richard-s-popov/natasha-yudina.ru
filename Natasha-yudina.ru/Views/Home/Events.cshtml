@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<script type="text/javascript" src="@Url.Content("~/Scripts/scrollingcarousel.2.0.min.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/scrollingcarousel.2.0.js")"></script>
 
 <div class="left-panel">
     <div id="event1" class="item">
@@ -74,24 +74,26 @@
 </div>
 
 <div class="right-panel">
-    <a href="#event1" class="small-item">
-        <div class="img" style="background: url(/Content/img/events/1_1_middle.jpg) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Event1_Name</p>
-        </div>
-    </a>
-    <a href="#event2" class="small-item">
-        <div class="img" style="background: url(/Content/img/events/2_1_middle.JPG) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Event2_Name</p>
-        </div>
-    </a>
-    <a href="#event3" class="small-item">
-        <div class="img" style="background: url(/Content/img/events/3_1_middle.JPG) no-repeat center center;"></div>
-        <div class="name">
-            <p>@Resources.Resources.Event3_Name</p>
-        </div>
-    </a>
+    <div class="right-menu">
+        <a href="#event1" class="small-item">
+            <div class="img" style="background: url(/Content/img/events/1_1_middle.jpg) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Event1_Name</p>
+            </div>
+        </a>
+        <a href="#event2" class="small-item">
+            <div class="img" style="background: url(/Content/img/events/2_1_middle.JPG) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Event2_Name</p>
+            </div>
+        </a>
+        <a href="#event3" class="small-item">
+            <div class="img" style="background: url(/Content/img/events/3_1_middle.JPG) no-repeat center center;"></div>
+            <div class="name">
+                <p>@Resources.Resources.Event3_Name</p>
+            </div>
+        </a>
+    </div>
 </div>
 
 <script type="text/javascript">
@@ -104,6 +106,17 @@
 	        $(this).parent().parent().parent().find('.big-view img').attr('src', '/Content/img/events/' + $(this).attr('img'));
 	        $(this).parent().parent().parent().find('.big-view a[href="/Content/img/events/' + $(this).attr('img') + '"]').attr('href', $(this).parent().parent().parent().find('.big-view a:first').attr('href'));
 	        $(this).parent().parent().parent().find('.big-view a:first').attr('href', '/Content/img/events/' + $(this).attr('img'));
+	    });
+	    
+	    var offset = $(".right-menu").offset();
+	    
+	    $(window).scroll(function () {
+	        if ($(window).scrollTop() > offset.top) {
+	            $(".right-menu").css({ 'top': '10px', 'position': 'fixed' }); /* тут можно задать отступ от верхней границы, в данном случае это 10 px */
+	        }
+	        else {
+	            $(".right-menu").css({ 'top': offset.top, 'position': 'static' });
+	        };
 	    });
 	});
 </script>

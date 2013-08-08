@@ -76,14 +76,14 @@ textarea {
     background-image: url(../Content/img/logo.png);
     width: 300px;
     height: 55px;
-    top: 20px;
+    top: 45px;
 }
 
 .header-content .fb_logo {
     position: absolute;
     background: url(../Content/img/fb_logo.jpg) center right;
-    width: 39px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     right: 20px;
     top: 20px;
     cursor: pointer;
@@ -194,9 +194,10 @@ textarea {
 	margin:0 0 0 0;
 	text-align:center;
 	width:130px;
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+    border-left: 1px solid #ccc;
+    /*filter: url(filters.svg#grayscale);  Firefox 3.5+ 
+    filter: gray;  IE6-9 
+    -webkit-filter: grayscale(1);  Google Chrome & Safari 6+ */
     cursor: pointer;
     /*transition: all 0.2s ease;*/
 }
@@ -264,6 +265,7 @@ textarea {
     width: 270px;
     margin-left: 20px;
     vertical-align: top;
+    position: relative;
 }
 
 .right-panel .small-item {
@@ -312,6 +314,35 @@ textarea {
     font-size: 10px;
     color: #666666;
     width: 325px;
+}
+
+.contact-container .contact-table {
+    width: 500px;
+    margin: 0 auto;
+    font-family: optimaltstd, Arial, sans-serif;
+}
+
+.contact-table td span {
+    font-style: italic;
+    color: #999;
+}
+
+.contact-table td {
+    color: #555;
+    padding-bottom: 11px;
+}
+
+.contact-table .who {
+    width: 250px;
+}
+
+.contact-table .value {
+    width: 250px;
+}
+
+.contact-table td a {
+    color: #555;
+    text-decoration: none;
 }
 
 .contact-container {

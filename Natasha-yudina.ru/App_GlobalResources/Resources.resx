@@ -124,7 +124,7 @@
     <value>Контакты</value>
   </data>
   <data name="Event1_Name" xml:space="preserve">
-    <value>Студия GridchinHall</value>
+    <value>Резиденция Gridchinhall</value>
   </data>
   <data name="Event2_Name" xml:space="preserve">
     <value>Комната в горох</value>
@@ -145,15 +145,15 @@
     <value>2013 | Новый проект</value>
   </data>
   <data name="Project2_Name" xml:space="preserve">
-    <value>18+Постельные сцены</value>
+    <value>Октябрь/Ноябрь 2012 | 18+Постельные сцены</value>
   </data>
   <data name="Project3_Name" xml:space="preserve">
-    <value>Кукольная антропология</value>
+    <value>2012 | Кукольная антропология</value>
   </data>
   <data name="Project4_Name" xml:space="preserve">
-    <value>Игрушки</value>
+    <value>2006 - 2007 | Игрушки</value>
   </data>
   <data name="Project5_Name" xml:space="preserve">
-    <value>Искусство в горох</value>
+    <value>2008 | Искусство в горох</value>
   </data>
 </root>

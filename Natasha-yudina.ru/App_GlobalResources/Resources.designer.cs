@@ -79,7 +79,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, такую же, как Студия GridchinHall.
+        ///   Ищет локализованную строку, такую же, как Резиденция Gridchinhall.
         /// </summary>
         internal static string Event1_Name {
             get {
@@ -142,7 +142,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, такую же, как 18+Постельные сцены.
+        ///   Ищет локализованную строку, такую же, как Октябрь/Ноябрь 2012 | 18+Постельные сцены.
         /// </summary>
         internal static string Project2_Name {
             get {
@@ -151,7 +151,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, такую же, как Кукольная антропология.
+        ///   Ищет локализованную строку, такую же, как 2012 | Кукольная антропология.
         /// </summary>
         internal static string Project3_Name {
             get {
@@ -160,7 +160,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, такую же, как Игрушки.
+        ///   Ищет локализованную строку, такую же, как 2006 - 2007 | Игрушки.
         /// </summary>
         internal static string Project4_Name {
             get {
@@ -169,7 +169,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, такую же, как Искусство в горох.
+        ///   Ищет локализованную строку, такую же, как 2008 | Искусство в горох.
         /// </summary>
         internal static string Project5_Name {
             get {

@@ -148,6 +148,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\filters.svg" />
     <Content Include="Content\img\events\1_1.jpg" />
     <Content Include="Content\img\events\1_1_middle.jpg" />
     <Content Include="Content\img\events\1_2.jpg" />
@@ -346,6 +347,7 @@
     <Content Include="App_GlobalResources\Resources.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resources.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
@@ -362,6 +364,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\scrollingcarousel.2.0.js" />
     <Content Include="Scripts\scrollingcarousel.2.0.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
