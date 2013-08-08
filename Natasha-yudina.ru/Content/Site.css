@@ -286,6 +286,7 @@ textarea {
 .right-panel .small-item .name {
     display: inline-block;
     vertical-align: top;
+    width: 173px;
 }
 
 .right-panel .small-item .name p {
