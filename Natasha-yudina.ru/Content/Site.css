@@ -1,8 +1,15 @@
-﻿body {
+﻿html {
+    height: 100%;
+}
+
+body {
     font-size: 11px;
     font-family: tahoma, "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header, footer, nav, section {
@@ -63,6 +70,20 @@ textarea {
 .main {
     width: 1000px;
     margin: 0 auto;
+    height: auto;
+    position: relative;
+}
+
+.footer {
+    bottom: 5px;
+    position: absolute;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.center-content {
+    padding-bottom: 30px;
 }
 
 .header-content {

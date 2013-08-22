@@ -142,7 +142,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, такую же, как Октябрь/Ноябрь 2012 | 18+Постельные сцены.
+        ///   Ищет локализованную строку, такую же, как 2012 | 18+Постельные сцены.
         /// </summary>
         internal static string Project2_Name {
             get {
@@ -174,6 +174,15 @@ namespace Resources {
         internal static string Project5_Name {
             get {
                 return ResourceManager.GetString("Project5_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, такую же, как 2008 | Драгоценности.
+        /// </summary>
+        internal static string Project6_Name {
+            get {
+                return ResourceManager.GetString("Project6_Name", resourceCulture);
             }
         }
     }

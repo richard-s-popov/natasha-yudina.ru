@@ -103,9 +103,26 @@
 		});
 
 	    $('.carousel li').click(function() {
+	        if ($(this).attr('img') == 'video') {
+	            $(this).parent().parent().parent().find('.big-view.images').hide();
+	            $(this).parent().parent().parent().find('.big-view.video').show();
+	            return;
+	        } else {
+	            $(this).parent().parent().parent().find('.big-view.images').show();
+	            $(this).parent().parent().parent().find('.big-view.video').hide();
+	            $(this).parent().parent().parent().find('.big-view.video').html('<iframe width="350" height="230" src="http://www.youtube.com/embed/KgFXKDE8Kp0" frameborder="0" allowfullscreen rel="0"></iframe>');
+	        }
+
 	        $(this).parent().parent().parent().find('.big-view img').attr('src', '/Content/img/events/' + $(this).attr('img'));
+
+	        var title = $(this).parent().parent().parent().find('.big-view a[href="/Content/img/events/' + $(this).attr('img') + '"]').attr('title');
+	        $(this).parent().parent().parent().find('.big-view a[href="/Content/img/events/' + $(this).attr('img') + '"]').attr('title', $(this).parent().parent().parent().find('.big-view a:first').attr('title'));
+	        $(this).parent().parent().parent().find('.big-view a:first').attr('title', title);
+
 	        $(this).parent().parent().parent().find('.big-view a[href="/Content/img/events/' + $(this).attr('img') + '"]').attr('href', $(this).parent().parent().parent().find('.big-view a:first').attr('href'));
 	        $(this).parent().parent().parent().find('.big-view a:first').attr('href', '/Content/img/events/' + $(this).attr('img'));
+
+	        $(this).parent().parent().parent().find('.description .image-name').html(title);
 	    });
 	    
 	    var offset = $(".right-menu").offset();
