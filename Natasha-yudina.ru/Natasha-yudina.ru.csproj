@@ -233,6 +233,12 @@
     <Content Include="Content\img\gallery\5_3_middle.jpg" />
     <Content Include="Content\img\gallery\5_4.JPG" />
     <Content Include="Content\img\gallery\5_4_middle.JPG" />
+    <Content Include="Content\img\gallery\6_1.JPG" />
+    <Content Include="Content\img\gallery\6_1_middle.JPG" />
+    <Content Include="Content\img\gallery\6_2.JPG" />
+    <Content Include="Content\img\gallery\6_2_middle.JPG" />
+    <Content Include="Content\img\gallery\6_3.JPG" />
+    <Content Include="Content\img\gallery\6_3_middle.JPG" />
     <Content Include="Content\img\gallery\video.png" />
     <Content Include="Content\img\home_pano\10_5.jpg" />
     <Content Include="Content\img\home_pano\11_1.jpg" />

@@ -74,6 +74,21 @@ textarea {
     position: relative;
 }
 
+.hr {
+    margin: 0 -2em 1em -2em;
+    clear: both;
+    background: #bcbcbc;
+    background: -moz-linear-gradient(left, #ffffff 0%, #bcbcbc 10%, #bcbcbc 90%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(10%,#bcbcbc), color-stop(90%,#bcbcbc), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%);
+    background: -o-linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%);
+    background: -ms-linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bcbcbc', endColorstr='#bcbcbc',GradientType=1 );
+    background: linear-gradient(left, #ffffff 0%,#bcbcbc 10%,#bcbcbc 90%,#ffffff 100%);
+    border: none;
+    height: 1px;
+}
+
 .footer {
     bottom: 5px;
     position: absolute;
@@ -100,24 +115,20 @@ textarea {
     top: 45px;
 }
 
-.header-content .fb_logo {
+.fb_logo {
     position: absolute;
-    background: url(../Content/img/fb_logo.jpg) center right;
+    background: url(../Content/img/fb_logo.jpg) center left;
     width: 30px;
     height: 30px;
-    right: 20px;
-    top: 20px;
+    right: 90px;
+    top: -7px;
     cursor: pointer;
 }
 
-.header-content .fb_logo a {
+.fb_logo a {
     display: block;
     width: 100%;
     height: 100%;
-}
-
-.header-content .fb_logo:hover {
-    background-position: center left;
 }
 
 .promo {
@@ -215,7 +226,7 @@ textarea {
 	margin:0 0 0 0;
 	text-align:center;
 	width:130px;
-    border-left: 1px solid #ccc;
+    border-left: 2px solid #ffffff;
     /*filter: url(filters.svg#grayscale);  Firefox 3.5+ 
     filter: gray;  IE6-9 
     -webkit-filter: grayscale(1);  Google Chrome & Safari 6+ */
@@ -231,7 +242,7 @@ textarea {
 .left-panel {
     display: inline-block;
     width: 70%;
-    padding-bottom: 400px;
+    padding-bottom: 200px;
 }
 
 .left-panel .item {
@@ -360,6 +371,7 @@ textarea {
 
 .contact-table .value {
     width: 250px;
+    position: relative;
 }
 
 .contact-table td a {
@@ -491,4 +503,25 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
      -webkit-box-shadow:0 0 5px 2px #aaa; 
      -moz-box-shadow:0 0 5px 2px #aaa; 
      box-shadow:0 0 5px 2px #aaa;
+}
+
+.biography {
+    margin-bottom: 100px;
+}
+
+.biography img {
+    display: inline-block;
+    width: 370px;
+}
+
+.biography .biography-text {
+    display: inline-block;
+    width: 570px;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.biography .photo-by {
+    font-size: 10px;
+    color: #666666;
 }
