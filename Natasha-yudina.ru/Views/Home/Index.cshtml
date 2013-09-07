@@ -3,7 +3,31 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<table class="pano" cellspacing="0" cellpadding="0">
+<table class="pano-v2" cellspacing="7" cellpadding="7">
+	<tr class="row-v2">
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/1.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/2.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 2 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/3.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 7 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/4.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/5.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
+	</tr>
+	<tr class="row-v2">
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/6.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 2 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/7.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/8.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 2 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/9.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 7 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/10.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 2 })"></a></td>
+	</tr>
+	<tr class="row-v2">
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/11.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/12.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 2 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/13.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/14.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 2 })"></a></td>
+		<td class="pano-element-v2" style="background: url(/Content/img/home_pano_v2/15.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 7 })"></a></td>
+	</tr>
+</table>
+
+@*<table class="pano" cellspacing="0" cellpadding="0">
     <tr class="row">
         <td class="pano-element" style="background: url(/Content/img/home_pano/1_1.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 1 })"></a></td>
         <td class="pano-element" style="background: url(/Content/img/home_pano/2_55.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project4", @id = 55 })"></a></td>
@@ -36,7 +60,7 @@
         <td class="pano-element" style="background: url(/Content/img/home_pano/23_99.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project4", @id = 99 })"></a></td>
         <td class="pano-element" style="background: url(/Content/img/home_pano/24_6.jpg) no-repeat center center;"><a href="@Url.Action("Gallery", new { @project = "project2", @id = 6 })"></a></td>
     </tr>
-</table>
+</table>*@
 
 @*@if (ViewBag.NoPromo)
 {
